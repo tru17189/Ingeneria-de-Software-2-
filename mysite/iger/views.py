@@ -12,6 +12,6 @@ def detail(request, student_carnet):
     try:
         student = Student.objects.get(pk=student_carnet)
     except Student.DoesNotExist:
-        raise Http404("Question does not exist")
+        raise Http404("Student does not exist")
     return render(request, 'iger/detail.html', {'student': student})
 # Create your views here.
