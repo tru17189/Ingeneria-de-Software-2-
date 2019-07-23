@@ -1,0 +1,9 @@
+{% if carnet_list %}
+    <ul>
+    {% for c in carnet_list %}
+        <li><a href="{% url 'detail' c.student_carnet %}">{{ c.student_carnet }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No carnets are available.</p>
+{% endif %}
