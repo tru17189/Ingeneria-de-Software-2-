@@ -2,11 +2,15 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from .models import Student
 from django.http import Http404
+
 def index(request):
+    return render(request, 'iger/index.html')
+
+def students(request):
     carnet_list = Student.objects.all()
     print(carnet_list)
     context = {'carnet_list': carnet_list}
-    return render(request, 'iger/index.html', context)
+    return render(request, 'iger/students.html', context)
 
 def detail(request, student_carnet):
     try:
