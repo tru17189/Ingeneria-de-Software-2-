@@ -1,114 +1,128 @@
 <!DOCTYPE html>
-<html>
-<head>
-<style>
-div.a {
-    text-align: center; 
-}
+    <html>
+    <head>
+        <style>
+            article {
+                font-family: sans-serif;
+            }
+                            
+            div.b {
+                text-align: left;
+            }
+                            
+            div.c {
+                text-align: right;
+            } 
+                            
+            div.d {
+                text-align: justify;
+            } 
+
+            h1{
+                position: absolute;
+                left: 80px;
+                right: 880px; 
+                top: 200px;
+            }
+
+            h2{
+                position: absolute;
+                left: 80px;
+                top: 390px;
+                right: 1065px;
+            }
+
+            h3{
+                position: absolute;
+                left: 1290px;
+                top: 640px;
+            }
+
+            img{
+               display: block;
+               margin: auto;
+            }
+
+            h6{
                 
-div.b {
-    text-align: left;
-}
+                color: #111E6C;
+                font-size: 35px;
+                font-family: "sans-serif"
+            }
+
+            ol {list-style: none; counter-reset: li}
+            li::before {
+                content: counter(li);
+                color: #F8B018;
+                display: block; 
+                width: 2em;
+                margin-left: -2em;
+                margin-top:2em;
+            }
+            li {counter-increment: li}
+
+            .button {
+                background-color: #F8B018;
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+            }
+
+            video{
+                display: block;
+                margin: auto;
+            }
+
+            p{
+                color: #111E6C;
+                font-size: 30px;
+                margin-left: auto;
+                margin-right: auto;
+                width: 30em;
+                text-align: center;
+
                 
-div.c {
-    text-align: right;
-} 
-                
-div.d {
-    text-align: justify;
-} 
+            }
+        </style>
+    </head>
+    <body>
+        {% load static from staticfiles%}
+        <article class="a">
+            
+            <img src="{%static 'question.png' %}" width="270" height="270">
+            <p>En el siguiente portal podras encontrar todos tus libros que usaras durante el semestre que estas cursando.
+                    Podras acceder a ellos sin necesidad de descargarlos y sin necesidad de conexión a internet. 
+            </p>
+            <video width="600" controls>
+                    <source src="{%static 'Exp.mp4' %}" type="video/mp4">
+                    Tu navegador no soporta este video.
+            </video>
+            <h6 align="center">¿Como utilizarlo?</h6>
+            <h2><ol>
+                <font color="5181C2", size="2", face="sans-serif">
+                    <li>Da click en el botón siguiente</li>
+                    <li>ve a la sección "libros"</li>
+                    <li>Dentro de esta sección da click al nombre del libro y te abrira tu libro</li>
+                    <li>O bien da click en el click en el icono de descargar que se encuentra a la par del nombre del libro y abre la carpeta desde tu dispositivo</li>
+                </font> 
+            </ol> </h2>
 
-h1{
-    position: absolute;
-    left: 80px;
-    right: 880px; 
-    top: 200px;
-  }
+            <h3><button class="button" type="button" onclick="location.href='carnet'">SIGUIENTE</button></h3>
 
-h2{
-    position: absolute;
-    left: 80px;
-    top: 390px;
-    right: 1065px;
-  }
+            
 
-h3{
-    position: absolute;
-    left: 1290px;
-    top: 640px;
-}
+            
 
-h4{
-    position: absolute;
-    left: 320px;
-    top: 50px;
-}
+           
 
-h5{
-    position: absolute;
-    left: 890px;
-    top: 140px;
-}
+            
+        </article>
 
-h6{
-    position: absolute;
-    left: 890px;
-    top: 400px;
-}
-
-ol {list-style: none; counter-reset: li}
-li::before {
-    content: counter(li);
-    color: #F8B018;
-    display: block; 
-    width: 2em;
-    margin-left: -2em;
-    margin-top:2em;
-}
-  li {counter-increment: li}
-
-  .button {
-    background-color: #F8B018;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-  }
-</style>
-</head>
-<body>
-    {% load static from staticfiles%}
-    <div class="a">
-        <font color="111E6C", size="3">
-            <h1><p><font face="sans-serif", >A continuación podras encontrar todos los libros que usaras este semestre. Aquí
-            te dejamos los pasos que debes de seguir para poder descargalos:</font></p></h1>
-        </font> 
-
-        <h2><ol>
-            <font color="5181C2", size="2", face="sans-serif">
-                <li>Da click en el botón siguiente</li>
-                <li>ve a la sección "libros"</li>
-                <li>Dentro de esta sección da click al nombre del libro y te abrira tu libro</li>
-                <li>O bien da click en el click en el icono de descargar que se encuentra a la par del nombre del libro y abre la carpeta desde tu dispositivo</li>
-            </font> 
-        </ol> </h2>
-
-        <h3><button class="button" type="button" onclick="location.href='carnet'">SIGUIENTE</button></h3>
-
-        <h4><img src="{%static 'SymbolHead.jpeg' %}" width="170" height="170"></h4>
-
-        <h5><video width="400" controls>
-            <source src="{%static 'Exp.mp4' %}" type="video/mp4">
-            Tu navegador no soporta este video.
-        </video></h5>
-
-        <font color="111E6C", size="12", face="sans-serif"><h6>¿Como utilizarlo?</h6></font>
-    </div>
-
-</body>
+    </body>
 </html>
