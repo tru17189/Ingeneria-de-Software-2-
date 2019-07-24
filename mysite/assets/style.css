@@ -31,6 +31,8 @@ h1{
 h2{
     font-family: sans-serif;
     align-content: center;
+    color: #111E6C;
+    font-size: 30px;
 }
 
 .cuadro{
@@ -69,4 +71,18 @@ h2{
 .header2{
     margin-left:25px;
     margin-top: 27px;
+}
+
+.button {
+    background-color: #F8B018;
+    border: none;
+    color: white;
+    font-family: sans-serif;
+    padding: 20px 37px;
+    text-align: center;
+    display: block;
+    font-size: 18px;
+    margin-left: 1100px;
+    cursor: pointer;
+    border-radius: 22px;
 }
