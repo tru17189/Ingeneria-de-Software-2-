@@ -6,6 +6,9 @@ from django.http import Http404
 def index(request):
     return render(request, 'iger/index.html')
 
+def instructions(request):
+    return render(request, 'iger/instructions.html')
+
 def students(request):
     carnet_list = Student.objects.all()
     print(carnet_list)
