@@ -51,11 +51,27 @@ h4{
 		<font color="111E6C", size="5">
             <h2><p><font face="sans-serif", >Ingrese el carnet:</font></p></h2>
         </font> 
-		<h3><input type="text" value="carnet"><br></h3>
-		<h4><button class="button">Ingresar</button></h4>
+        <h3><input id="carnet" type="text" value="carnet" name="numero"><br></h3>
+        <h4><button class="button" type="submit" id="mandar" onclick="doFunction()">Ingresar</button></h4>
 	
 		
     
 
 </body>
+
+<script>
+
+    
+function doFunction(){
+
+    window.location.href = "students/"+document.getElementById("carnet").value;
+    
+}
+
+
+
+
+</script>
+
 </html>
+
