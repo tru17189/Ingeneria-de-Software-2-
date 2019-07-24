@@ -9,6 +9,9 @@ def index(request):
 def instructions(request):
     return render(request, 'iger/instructions.html')
 
+def carnet(request):
+    return render(request, 'iger/carnet.html')
+
 def students(request):
     carnet_list = Student.objects.all()
     print(carnet_list)

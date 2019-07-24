@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.a {
+    text-align: center; 
+}
+
+h1 {
+   position: absolute;
+   left: 550px; 
+   top: 25px;
+}
+
+h2 {
+   position: absolute;
+   left: 525px; 
+   top: 165px;
+}
+
+h3 {
+   position: absolute;
+   left: 590px; 
+   top: 270px;
+}
+
+h4{
+   position: absolute;
+   left: 625px; 
+   top: 320px;
+}
+
+
+.button {
+	background-color: #F8B018;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0px 0px;
+	cursor: pointer;
+}
+</style>
+ {% load static from staticfiles%}
+</head>
+<body>
+		<h1><img src="{%static 'img-carnet.jpg' %}" width="250" height="170"></h1>
+		<font color="111E6C", size="5">
+            <h2><p><font face="sans-serif", >Ingrese el carnet:</font></p></h2>
+        </font> 
+		<h3><input type="text" value="carnet"><br></h3>
+		<h4><button class="button">Ingresar</button></h4>
+	
+		
+    
+
+</body>
+</html>
