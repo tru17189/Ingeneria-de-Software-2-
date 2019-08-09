@@ -32,11 +32,7 @@ ALLOWED_HOSTS = ["*"]
 
 INSTALLED_APPS = [
     'iger.apps.IgerConfig',
-<<<<<<< HEAD
-    'bootstrap_admin',
-=======
     'suit',
->>>>>>> parent of 0165e12... arregle una cagada
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
