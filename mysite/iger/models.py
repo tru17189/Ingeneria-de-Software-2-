@@ -2,7 +2,7 @@ from django.db import models
 
 class Student(models.Model):
     student_carnet = models.CharField(max_length=15, primary_key=True)
-    student_name = models.CharField(max_length=50)
+    student_name = models.CharField(max_length=15)
     student_grade = models.IntegerField()
     student_semester = models.IntegerField()
     def __str__(self):
