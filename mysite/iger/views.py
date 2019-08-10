@@ -27,8 +27,7 @@ def detail(request, student_carnet):
     except Student.DoesNotExist:
         try:
             student = Student.objects.get(student_name=student_carnet)
-        except Student.DoesNotExist as e:
-            status_code = 401
-            message = "Ingresaste tus credenciales incorrectamente"
+        except Student.DoesNotExist:
+            raise Http500("El alumno no existe, ingrese nuevamente sus credenciales")
     return render(request, 'iger/detail.html', {'student': student})
 
