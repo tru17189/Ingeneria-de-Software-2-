@@ -23,8 +23,12 @@ def students(request):
 
 def detail(request, student_carnet):
     try:
-        student = Student.objects.get(pk=student_carnet)
+        student = Student.objects.get(student_carnet=student_carnet)         
     except Student.DoesNotExist:
-        raise Http404("Student does not exist")
+        try:
+            student = Student.objects.get(student_name=student_carnet)
+        except Student.DoesNotExist as e:
+            status_code = 401
+            message = "Ingresaste tus credenciales incorrectamente"
     return render(request, 'iger/detail.html', {'student': student})
 
