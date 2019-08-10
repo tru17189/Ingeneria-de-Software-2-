@@ -12,6 +12,9 @@ def instructions(request):
 def carnet(request):
     return render(request, 'iger/carnet.html')
 
+def nombre(request):
+    return render(request, 'iger/nombre.html')
+
 def students(request):
     carnet_list = Student.objects.all()
     print(carnet_list)
@@ -24,4 +27,4 @@ def detail(request, student_carnet):
     except Student.DoesNotExist:
         raise Http404("Student does not exist")
     return render(request, 'iger/detail.html', {'student': student})
-# Create your views here.
+
