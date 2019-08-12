@@ -1,0 +1,20 @@
+{% extends '../base.html' %}
+
+{% block content %}
+<form method="GET">
+    <select name="coor">
+        {% for coor in coor_list %}
+        <option value={{coor.id}}> {{coor.name}} </option>
+        {% endfor %}
+    </select>
+    <input type="text" name="num_circle">
+    <input type="text" name="num_x">
+    <input type="submit" value="Agregar">
+</form>
+
+{% if saved %}
+<script>
+    alert('Guardado con exito')
+</script>
+{% endif %}
+{% endblock %}

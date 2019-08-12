@@ -14,3 +14,12 @@ class Student(models.Model):
     def get_semester(self):
         return self.student_semester
 
+class Circle(models.Model):
+    circle_code = models.CharField(max_length=20, primary_key=True)
+    name_coor = models.CharField(max_length=20)
+    id_coor = models.IntegerField()
+    num_x = models.IntegerField()
+    circle_number = models.IntegerField()
+
+    def __str__(self):
+        return self.id_coor + self.num_x + self.circle_number
