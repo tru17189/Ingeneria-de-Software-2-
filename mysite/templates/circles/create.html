@@ -1,15 +1,70 @@
 {% extends '../base.html' %}
 
 {% block content %}
+<style>
+.Bluesquare {
+	z-index: 1;
+	position: absolute;
+	top: 40px;
+	left: 500px;
+	width: 261px;
+	height: 60px;
+	border-radius: 0%;
+	background: #111E6C;
+}
+
+.Square{
+	position: absolute;
+	top: 130px;
+	left: 380px;
+	width: 500px;
+	height: 200px;
+	background: #ffffff;
+	border: 3px solid #f8b018;
+	border-radius: 5%;
+}
+
+.code1{
+	margin-top: 40px;
+	margin-left: 180px;
+}
+
+.code2{
+	margin-top: 10px;
+	margin-left: 140px;
+}
+
+.code3{
+	margin-top: 10px;
+	margin-left: 140px;
+}
+
+.addButton{
+	margin-top: 20px;
+	margin-left: 200px;
+}
+
+
+</style>
 <form method="GET">
-    <select name="coor">
-        {% for coor in coor_list %}
-        <option value={{coor.id}}> {{coor.name}} </option>
-        {% endfor %}
-    </select>
-    <input type="text" name="num_circle">
-    <input type="text" name="num_x">
-    <input type="submit" value="Agregar">
+	
+	<div class="Bluesquare">				
+		<p><font style="font-size:30px;" face="arial" color="white">Crear nuevo circulo</font></p>
+	</div>
+	
+	
+	<div class="Square">
+		<div>
+			<select class="code1" name="coor">
+				{% for coor in coor_list %}
+				<option value={{coor.id}}> {{coor.name}} </option>
+				{% endfor %}
+			</select>
+			<input class="code3" type="text" name="num_x">
+			<input class="code2" type="text" name="num_circle">
+		</div>
+		<input class="addButton" type="submit" value="Agregar">
+	</div>
 </form>
 
 {% if saved %}
