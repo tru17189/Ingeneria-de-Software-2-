@@ -9,3 +9,4 @@ class AuthorAdmin(admin.ModelAdmin):
     list_filter = ('student_grade', 'student_semester')
 
 admin.site.register(Student, AuthorAdmin) 
+admin.site.register(Departamento)

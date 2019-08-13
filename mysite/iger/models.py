@@ -14,6 +14,12 @@ class Student(models.Model):
     def get_semester(self):
         return self.student_semester
 
+class Departamento(models.Model):
+    coordinacion = models.IntegerField()
+    departamento = models.CharField(max_length=30, primary_key=True)
+    def get_departamento(self):
+        return self.departamento
+
 class Circle(models.Model):
     circle_code = models.CharField(max_length=20, primary_key=True)
     name_coor = models.CharField(max_length=20)
