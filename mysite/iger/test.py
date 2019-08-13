@@ -1,5 +1,6 @@
 from django.test import TestCase
 from .models import Student
+from .models import ListaDepartamento
 # Create your tests here.
 
 class StudentTestCase(TestCase):
@@ -11,8 +12,15 @@ class StudentTestCase(TestCase):
         self.assertEqual(estudiante.student_grade, 1)
         self.assertEqual(estudiante.student_semester, 2)
 
-        
-   
+class ListaDepartamentoTestCase(TestCase):
+    def test_get_ListaDepartamento(self):
+        ListaDepartamento.objects.create(coordinacion = "02", departamento="Guatemala 2")
+        pruebaDepartamento = ListaDepartamento.objects.get(pk="Guatemala 2")
+        self.assertEqual(pruebaDepartamento.coordinacion, '02')
+        self.assertEqual(pruebaDepartamento.departamento, 'Guatemala 2')
+
+
+
         
         
         

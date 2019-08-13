@@ -1,6 +1,6 @@
 from django.contrib import admin
 from .models import Student
-from .models import Departamento
+from .models import ListaDepartamento
 
 
 
@@ -10,4 +10,4 @@ class AuthorAdmin(admin.ModelAdmin):
     list_filter = ('student_grade', 'student_semester')
 
 admin.site.register(Student, AuthorAdmin) 
-admin.site.register(Departamento)
+admin.site.register(ListaDepartamento)
