@@ -11,4 +11,5 @@ urlpatterns = [
     path('nombre', views.nombre, name='nombre'),
     path('students',views.students,name='students'),
     path('students/<str:student_carnet>/', views.detail, name='detail'),
+    path('circles/create',views.create_circle,name='create_circle')
     ]
