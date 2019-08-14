@@ -1,6 +1,7 @@
 from django.contrib import admin
 from .models import Student
 from .models import ListaDepartamento
+from .models import Circle
 
 
 
@@ -11,3 +12,4 @@ class AuthorAdmin(admin.ModelAdmin):
 
 admin.site.register(Student, AuthorAdmin) 
 admin.site.register(ListaDepartamento)
+admin.site.register(Circle)
