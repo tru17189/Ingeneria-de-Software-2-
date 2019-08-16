@@ -1,5 +1,13 @@
 dist: xenial   # required for Python >= 3.7
 language: generic            # this works for Linux but is an error on macOS or Windows
+deploy:
+  provider: s3
+  access_key_id: "$AWS_ACCESS_KEY"
+  secret_access_key: "$AWS_SECRET_KEY"
+  bucket: "$BUCKET"
+  region: "$REGION"
+  acl: public_read
+  skip_cleanup: true
 matrix:
   include:
     - name: "Python 3.7.1 on Xenial Linux"
