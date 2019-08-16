@@ -1,5 +1,5 @@
 dist: xenial   # required for Python >= 3.7
-language: python            # this works for Linux but is an error on macOS or Windows
+language: generic            # this works for Linux but is an error on macOS or Windows
 matrix:
   include:
     - name: "Python 3.7.1 on Xenial Linux"
