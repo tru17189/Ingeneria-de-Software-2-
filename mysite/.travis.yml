@@ -1,5 +1,5 @@
 dist: xenial   # required for Python >= 3.7
-language: python
+language: generic
 python:
   - "3.7"
   - "3.7-dev"  # 3.7 development branch
