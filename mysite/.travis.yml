@@ -1,5 +1,4 @@
-dist: xenial   # required for Python >= 3.7
-language: 
+language: generic 
 python:
   - "2.7"
   # PyPy versions
