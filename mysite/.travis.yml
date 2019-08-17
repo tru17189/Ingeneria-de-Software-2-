@@ -1,24 +1,13 @@
-dist: xenial   # required for Python >= 3.7
-language: generic            # this works for Linux but is an error on macOS or Windows
-deploy:
-  provider: s3
-  access_key_id: "$AWS_ACCESS_KEY"
-  secret_access_key: "$AWS_SECRET_KEY"
-  bucket: "$BUCKET"
-  region: "$REGION"
-  acl: public_read
-  skip_cleanup: true
-matrix:
-  include:
-    - name: "Python 3.7.3 on Windows"
-      os: windows           # Windows 10.0.17134 N/A Build 17134
-      language: shell       # 'language: python' is an error on Travis CI Windows
-      before_install:
-        - choco install python
-        - python -m pip install --upgrade pip
-      env:
-        - DJANGO_VERSION=1.10.8
-        - DJANGO_VERSION=1.11.5
-# 'python' points to Python 2.7 on macOS but points to Python 3.7 on Linux and Windows
-# 'python3' is a 'command not found' error on Windows but 'py' works on Windows only
-script: python3 manage.py || python manage.py
+language: generic 
+python:
+  - "2.7"
+  - "3.7"
+  # PyPy versions
+  - "pypy"   # currently Python 2.7.13, PyPy 7.1.1 
+  - "pypy3"  # currently Python 3.6.1,  PyPy 7.1.1-beta0
+# command to install dependencies
+install:
+  - pip install -r requirements.txt
+  - pip install .
+# command to run tests
+script: pytest
