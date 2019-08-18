@@ -30,5 +30,11 @@ class Circle(models.Model):
     num_x = models.IntegerField()
     circle_number = models.IntegerField()
 
-    def __str__(self):
-        return self.id_coor + self.num_x + self.circle_number
+    def get_circle_code(self):
+        return self.circle_code
+
+    def get_name_coor(self):
+        return self.name_coor
+
+    #def __str__(self):
+        #return self.id_coor + self.num_x + self.circle_number
