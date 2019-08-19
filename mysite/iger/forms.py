@@ -13,7 +13,6 @@ class ListaDepartamentoForm(forms.ModelForm):
 
         departamento = self.cleaned_data.get('departamento')
 
-        print (departamento)
 
         lista = [
             "ALTA VERAPAZ",
@@ -42,6 +41,6 @@ class ListaDepartamentoForm(forms.ModelForm):
         ]
         
         if departamento not in lista:
-            raise forms.ValidationError("NO PUEDE INGRESARSE", departamento, ", no es un departamento")
+            raise forms.ValidationError("NO PUEDE INGRESARSE")
 
         return departamento
