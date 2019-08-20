@@ -59,8 +59,11 @@ def create_circle(request):
 
 def detail(request, student_carnet):
     try:
-        student = Student.objects.get(pk=student_carnet)
+        student = Student.objects.get(student_carnet=student_carnet)         
     except Student.DoesNotExist:
-        raise Http404("Student does not exist")
+        try:
+            student = Student.objects.get(student_name=student_carnet)
+        except Student.DoesNotExist:
+            raise Http500("El alumno no existe, ingrese nuevamente sus credenciales")
     return render(request, 'iger/detail.html', {'student': student})
 
