@@ -1,0 +1,18 @@
+centro de ayuda interactivo
+Deploy Mafe
+Hacer diseño, todos, una página cada uno RESPONSIVE / ANTES DEL OTRO SABADO 
+revisar el codigo de axel para que cambie correctamente el link
+corrección de bugs, 
+en la pestaña de visualizar coordinaciones y circulos que aparezca de la misma forma que la de estudiantes no el objeto en si
+pruebas de usabilidad / DIA DOMINGO EN UN CIRCULO 
+revisar pruebas de integración !!!!!!!!
+pruebas de BDD
+pruebas de regresión!!!!!
+Implementar funcionalidad de descarg liro (ya esta solo mover en trello)
+Visualizar el libro directamente a partir de un link
+CONVERTIR EL PROYECTO EN UNA PROGRESSIVE WEB APP !!!!!!!!!!!!!!!!!!!!11
+-------------------------------------------------------------------------------------
+FTR 
+REFACTORING
+PRUEBAS UNITARIAS
+PRINCIPIO LEAN: VERLO COMO UN TODO
