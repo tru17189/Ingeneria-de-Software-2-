@@ -21,15 +21,16 @@ class ListaDepartamentoTestCase(TestCase):
         self.assertEqual(pruebaDepartamento.coordinacion, '02')
         self.assertEqual(pruebaDepartamento.departamento, 'Guatemala 2')
 
-class createCircleTestCase(TestCase):
-    def test_get_createCircle(self):
-        Circle.objects.create(circle_code="010203", name_coor="COBÁN",id_coor="1",num_x="02",circle_number="03")
-        pruebaCirculo = Circle.objects.get(pk="010203")
-        self.assertEqual(pruebaCirculo.circle_code, '010203')
-        self.assertEqual(pruebaCirculo.name_coor, 'COBÁN')
-        self.assertEqual(pruebaCirculo.id_coor, '1')
-        self.assertEqual(pruebaCirculo.num_x, '02')
-        self.assertEqual(pruebaCirculo.circle_number, '03')
+
+#class createCircleTestCase(TestCase):
+ #   def test_get_createCircle(self):
+  #      Circle.objects.create(circle_code="010203", name_coor="COBÁN",id_coor="1",num_x="02",circle_number="03")
+   #     pruebaCirculo = Circle.objects.get(pk="010203")
+    #    self.assertEqual(pruebaCirculo.circle_code, '010203')
+     #   self.assertEqual(pruebaCirculo.name_coor, 'COBÁN')
+      #  self.assertEqual(pruebaCirculo.id_coor, '1')
+       # self.assertEqual(pruebaCirculo.num_x, '02')
+        #self.assertEqual(pruebaCirculo.circle_number, '03')
 
 
 
