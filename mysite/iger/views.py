@@ -14,6 +14,9 @@ def carnet(request):
 
 def nombre(request):
     return render(request, 'iger/nombre.html')
+	
+def Cuarto1(request):
+    return render(request, 'iger/Grades_Views/4to1Semester.html')
 
 def students(request):
     carnet_list = Student.objects.all()
