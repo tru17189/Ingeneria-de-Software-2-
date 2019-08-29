@@ -1,0 +1,86 @@
+{% load static from staticfiles%}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device−width, initial−scale=1.0" />
+        <title>Inicio</title>
+        <link rel="stylesheet" type="text/css" href="{%static 'style.css' %}">
+        <style>
+
+            body{
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                background-color: rgba(250,146,0,1);
+                background-size: cover;
+                font-size: 32px;
+            }
+
+            h1{
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+                color:white;
+                padding-left:32%;
+            }
+
+            p{
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+                color:white;
+                font-size: 30px;
+                padding-left: 24%;
+            }
+
+            .men{
+                padding-left: 40%;
+            }
+
+            .button {
+                background-color: #1779b9;
+                border-radius: 30px;
+                border: none;
+                color: white;
+                width: px;
+                height: px;
+                margin-top: 3%;
+                margin-left: 39%;
+                text-align: center;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 18px;
+                font-weight: bold;
+                cursor: pointer;
+            }
+
+            figure{
+                display: block;
+                margin-top: 3%;
+                margin-left: auto;
+                margin-right: auto;
+                width: 30%;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <figure>
+            <img src="{%static 'logo_iger.png' %}" alt="Logotipo Iger" width="240" height="250">
+        </figure>
+        <div>
+            <h1> 
+                ABCdigital
+            </h1>
+            <p> 
+                Este es el portal de visuacialización donde     
+            </p>
+            <p>
+                encontrará los libros de todos sus cursos.
+            </p>
+            <p class="men">
+                    ¡Adelante!
+            </p>
+        </div>
+        <div>
+            <button class="button" type="button" onclick="location.href='carnet'">Continuar</button>  
+        </div>        
+        
+        
+    </body>
+
+</html>
