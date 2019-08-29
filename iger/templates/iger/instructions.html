@@ -1,95 +1,96 @@
 <!DOCTYPE html>
-    <html>
+<html>
+
     <head>
         <style>
-            article {
-                font-family: sans-serif;
-            }
-                            
-            img{
-               display: block;
-               margin: auto;
+
+            html{
+                height: 100%;
+                font-family: 'Segoe UI', Tahoma;
+                color: #111E6C;
             }
 
-            h6{
-                
-                color: #606060 ;
-                font-size: 35px;
-                font-family: "sans-serif"
+            h1{
+                position: relative;
+                top: 10px;
             }
 
-            ol {
-                list-style: none; 
-                counter-reset: li;
-                color: #5181C2;
-                font-family: sans-serif;
-                font-size: 22px;
-                
-            
-            }
-            li::before {
-                content: counter(li);
-                color: #F8B018;
-                margin-left: 300px;
-                margin-top:1em;
-            }
-            li {counter-increment: li}
-
-            .button {
-                background-color: #F8B018;
-                border: none;
-                color: white;
-                font-family: sans-serif;
-                padding: 20px 37px;
+            body {
+                background: linear-gradient(90deg, #F5C236, #EB7D33);
                 text-align: center;
-                display: block;
-                font-size: 18px;
-                margin-left: 1100px;
-                cursor: pointer;
-                border-radius: 22px;
-            }
-
-            video{
-                display: block;
-                margin: auto;
             }
 
             p{
-                color: #111E6C;
-                font-size: 30px;
-                margin-left: auto;
-                margin-right: auto;
-                width: 30em;
+                font-size: 20px;
                 text-align: center;
+            }
 
+            .bloque {
+                background: white;
+                height: 690px;
+                width: 880px;
+                border-radius: 10%;
+                text-align: center;
+                align-content: center;
+                margin: 0 auto;
+                position: relative;
+                top: 37px;
                 
             }
+
+            .button {
+                background-color: #3678B8;
+                border-radius: 20px;
+                border: none;
+                color: white;
+                width: 200px;
+                height: 60px;
+                padding: 10px 20px;
+                text-align: center;
+                display: inline-block;
+                font-size: 22px;
+                cursor: pointer;
+                margin-left: 46%;
+                font-family: 'Segoe UI';
+                margin-top: 5%;
+                
+            }
+
+            li{
+                font-size: 20px;
+                text-align: left;
+            }
+
+            ol{
+                text-align: left;
+            }
+
+
         </style>
     </head>
+
     <body>
-        {% load static from staticfiles%}
-        <article class="a">
-            <img src="{%static 'question.png' %}" width="270" height="200">
-            <p>En el siguiente portal podras encontrar todos tus libros que usaras durante el semestre que estas cursando.
-                    Podras acceder a ellos sin necesidad de descargarlos y sin necesidad de conexión a internet.</p>
+        <div class="bloque">
+            <h1>Pasos para visualizar los libros</h1>
+            <p style="margin: 10%" style="size: 20">En este portal, usted tiene acceso a todos los libros del semestre de estudio
+                que está cursando. Puede visualizarlos sin necesidad de descargarlos o sin
+                conexión a internet.
+            </p>
 
-            <p>A continuación te dejamos los pasos que debes seguir para poder ver tus libros.</p>
+            <p style="margin-left: 10%" style="size: 20">Siga estos siquientes pasos:</p>
 
-            <ol>
-                <li>       Da click en el botón siguiente.</li>
-                <li>       Después ya podras ver todos tus libros.</li>
-                <li>       Posicionate sobre el libro que quieras y da click al nombre del libro y se abrira.</li>
-                <li>       O bien da click en el click en el icono de descargar que se encuentra a la par del nombre del libro.</li>    
-            </ol> 
+            <ol style="margin-left: 15%">
 
-            <br>
-            <video width="600" controls>
-                    <source src="{%static 'Exp.mp4' %}" type="video/mp4">
-                    Tu navegador no soporta este video.
-            </video>
-           
-            <button class="button" type="button" onclick="location.href='carnet'">SIGUIENTE</button>            
-        </article>
+                <li>Dé clic en el botón siguiente, a continuación verá todos sus libros</li>
+                <li>Posicione el cursor sobre el libro que quiera abrir y dé clic sobre el nombre</li>
+                <li>Si desea descargarlo, dé clic sobre el ícono ____ que encontrará en cada libro.</li>
 
+            </ol>
+
+            <button class="button" type="submit"  align-content="right" id="mandar" onclick="doFunction()">INGRESAR</button>
+            
+            
+        </div>
     </body>
+
 </html>
