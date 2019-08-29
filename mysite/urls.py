@@ -18,8 +18,7 @@ from django.urls import include, path
 from django.views.generic.base import TemplateView
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 urlpatterns = [
-    path('iger/', include('iger.urls')),
-    path('', include('django.contrib.auth.urls')),
+    path('', include('iger.urls')),
     path('home/',TemplateView.as_view(template_name='home.html'), name = 'home'),
     path('admin/', admin.site.urls),
 ]

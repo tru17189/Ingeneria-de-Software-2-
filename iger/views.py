@@ -15,8 +15,8 @@ def carnet(request):
 def nombre(request):
     return render(request, 'iger/nombre.html')
 	
-def Cuarto1(request):
-    return render(request, 'iger/Grades_Views/4to1Semester.html')
+def semester(request):
+    return render(request, 'iger/semester.html')
 
 def students(request):
     carnet_list = Student.objects.all()
@@ -68,5 +68,5 @@ def detail(request, student_carnet):
             student = Student.objects.get(student_name=student_carnet)
         except Student.DoesNotExist:
             raise Http500("El alumno no existe, ingrese nuevamente sus credenciales")
-    return render(request, 'iger/detail.html', {'student': student})
+    return render(request, 'iger/instructions.html', {'student': student})
 
