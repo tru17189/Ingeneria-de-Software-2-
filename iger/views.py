@@ -17,6 +17,15 @@ def nombre(request):
 	
 def semester(request):
     return render(request, 'iger/semester.html')
+	
+def Semester2(request):
+    return render(request, 'iger/Semester2.html')
+	
+def QuintoSemester(request):
+    return render(request, 'iger/QuintoSemester.html')
+	
+def QuintoSemester2(request):
+    return render(request, 'iger/QuintoSemester2.html')
 
 def students(request):
     carnet_list = Student.objects.all()
