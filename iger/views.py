@@ -26,6 +26,9 @@ def QuintoSemester(request):
 	
 def QuintoSemester2(request):
     return render(request, 'iger/QuintoSemester2.html')
+	
+def pantallaTemporal(request):
+    return render(request, 'iger/pantallaTemporal.html')
 
 def students(request):
     carnet_list = Student.objects.all()
