@@ -13,7 +13,7 @@ urlpatterns = [
 	path('Cuarto2',views.Semester2,name='Cuarto2'),
 	path('Quinto1',views.QuintoSemester,name='Quinto1'),
 	path('Quinto2',views.QuintoSemester2,name='Quinto2'),
-	path('Grados',views.pantallaTemporal,name='Grados'),
+	path('Grados', views.pantallaTemporal, name='Grados'),
     path('students/<str:student_carnet>/', views.detail, name='detail'),
     path('circles/create',views.create_circle,name='create_circle')
     ]
