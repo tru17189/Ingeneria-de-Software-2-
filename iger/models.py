@@ -36,5 +36,4 @@ class Circle(models.Model):
     def get_name_coor(self):
         return self.name_coor
 
-    #def __str__(self):
-        #return self.id_coor + self.num_x + self.circle_number
+   
