@@ -9,11 +9,7 @@ urlpatterns = [
     path('instructions', views.instructions, name='instructions'),
     path('nombre', views.nombre, name='nombre'),
     path('students',views.students,name='students'),
-	path('students/31082019/Cuarto1',views.semester,name='Cuarto1'),
-	path('Cuarto2',views.Semester2,name='Cuarto2'),
-	path('Quinto1',views.QuintoSemester,name='Quinto1'),
-	path('Quinto2',views.QuintoSemester2,name='Quinto2'),
-	path('Grados',views.pantallaTemporal,name='Grados'),
+    path('students/31082019/Libro', views.libro, name="Libro"),
     path('students/<str:student_carnet>/', views.detail, name='detail'),
     path('circles/create',views.create_circle,name='create_circle')
     ]

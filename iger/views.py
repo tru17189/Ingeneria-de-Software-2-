@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.shortcuts import render_to_response
 from django.http import HttpResponse
 from .models import Student, Circle
 from django.http import Http404
@@ -12,20 +13,11 @@ def instructions(request):
 def carnet(request):
     return render(request, 'iger/carnet.html')
 
+def libro(request):
+    return render_to_response('iger/Libros/English/story_html5.html')
+
 def nombre(request):
     return render(request, 'iger/nombre.html')
-	
-def semester(request):
-    return render(request, 'iger/semester.html')
-	
-def Semester2(request):
-    return render(request, 'iger/Semester2.html')
-	
-def QuintoSemester(request):
-    return render(request, 'iger/QuintoSemester.html')
-	
-def QuintoSemester2(request):
-    return render(request, 'iger/QuintoSemester2.html')
 	
 def pantallaTemporal(request):
     return render(request, 'iger/pantallaTemporal.html')
@@ -80,5 +72,17 @@ def detail(request, student_carnet):
             student = Student.objects.get(student_name=student_carnet)
         except Student.DoesNotExist:
             raise Http500("El alumno no existe, ingrese nuevamente sus credenciales")
-    return render(request, 'iger/instructions.html', {'student': student})
+    
+    if (student.student_grade == 4):
+        if(student.student_semester == 1):
+            return render(request, 'iger/semester.html', {'student': student})
+        else:
+            return render(request, 'iger/Semester2.html', {'student': student})
+    else:
+        if(student.student_semester == 1):
+            return render(request, 'iger/QuintoSemester.html', {'student': student})
+        else:
+            return render(request, 'iger/QuintoSemester2.html', {'student': student})
+    
+    
 
