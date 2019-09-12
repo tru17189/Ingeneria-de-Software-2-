@@ -1,59 +1,62 @@
-# ABCdigital
+# ABCdigital [![Build Status](https://travis-ci.org/tru17189/Ingeneria-de-Software-2-.svg?branch=master)](https://travis-ci.org/tru17189/Ingeneria-de-Software-2-)
 
 Plataforma para descargar y visualizar los libros para los diferentes grados y semestres del bachillerato digital de Iger. También cuenta con un módulo administrador en el cual se pueden agregar alumnos, circulos, coordinaciones y ver estadisticas de la cantidad de alumnos que han ingresado al portal.
 
-[![Build Status](https://travis-ci.org/tru17189/Ingeneria-de-Software-2-.svg?branch=master)](https://travis-ci.org/tru17189/Ingeneria-de-Software-2-)
 
+### Prerequisitos
 
-
-## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
-### Prerequisites
-
-What things you need to install the software and how to install them
+Antes de clonar el repositorio se debera de descargar lo siguiente: 
+ - Python 3.x
+Instalar pip y configurar python como una variable de entorno, por último correr el comando:
 
 ```
-Give examples
+pip install django
 ```
 
-### Installing
+### Instalación
 
-A step by step series of examples that tell you how to get a development env running
+Después de clonar el repositorio, dirigirse a la carpeta en donde se clono y correr los siguientes comandos:
 
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
 
 ```
-until finished
+pip install -r requirements.txt
+```
+Lo que este comando instala son las dependencias que utiliza el proyecto tales como sql, rest-framework, y behave-django.
+
+Después correr los siguientes comandos para inicializar la base de datos: 
+
+```
+python manage.py makemigrations
+```
+```
+python manage.py migrate
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
+Una vez realizado esto correr el último comando:
+```
+python manage.py runserver
+```
+Esto inicializara la aplicación en el localhost de la computadora, se puede abrir en cualquier webbrowser.
 
-## Running the tests
 
-Explain how to run the automated tests for this system
+## Tests
 
 
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
+
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [Django](https://www.djangoproject.com/) - The web framework used
  
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **María Fernanda López** - [PurpleBooth](https://github.com/PurpleBooth)
+* **Miguel Valle** - [PurpleBooth](https://github.com/PurpleBooth)
+* **Antonio Reyes** - [PurpleBooth](https://github.com/PurpleBooth)
+* **Raúl Mónzon** - [PurpleBooth](https://github.com/PurpleBooth)
+* **Alexander Trujillo** - [PurpleBooth](https://github.com/PurpleBooth)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+
