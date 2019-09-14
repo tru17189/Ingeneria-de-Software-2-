@@ -143,13 +143,13 @@
         <h4 class="h7">Semestre: {{student.semestre}}</h4>
 
         <div class="Square1 square2">
-            <a  href="Libro" target="_blank">Lengua y Literatura</a>
+            <a   href="libro_mate" target="_blank">Lengua y Literatura</a>
             <div class="h2_2"></div>
             <a class="download fa fa-download" href="/iger/Libros/Organizacion y administracion_4to_1s.zip" download></a>
         </div>
 
         <div class="Square1 square3">
-            <a  href="/iger/prueba.zip" download > Inglés técnico</a>
+            <a href="Libro" target="_blank"> Inglés técnico</a>
             <div class="h2_2"></div>
             <a class="download fa fa-download" href="/iger/Libros/Organizacion y administracion_4to_1s.zip" download></a>
         </div>
@@ -167,7 +167,7 @@
         </div>
 
         <div class="Square1 square6">
-            <a  href="Libro" target="_blank">Matemática Financiera</a>
+            <a  href="libro_mate" target="_blank">Matemática Financiera</a>
             <div class="h2_2"></div>
             <a class="download fa fa-download" href="/iger/Libros/Matematica Financiera_4to_1s.zip" download></a>
         </div>
@@ -196,4 +196,9 @@
             <a class="download fa fa-download" href="/iger/Libros/Organizacion y administracion_4to_1s.zip" download></a>
         </div>
     </body>
+    <script>
+        function doFunction(){
+            window.location.href = "students/"+document.getElementById("libro_mate").value; 
+        }
+    </script>
 </html>
