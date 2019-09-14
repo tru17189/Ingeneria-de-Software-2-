@@ -3,17 +3,48 @@ from .models import Student
 from .models import ListaDepartamento
 from .models import Circle
 from .forms import ListaDepartamentoForm
+from import_export import resources
+from import_export.admin import ImportExportModelAdmin, ExportMixin
+from import_export.formats import base_formats
 
+class StudentResource(resources.ModelResource):
+    class Meta:
+        model = Student
+        import_id_fields = ['carnet']
 
-class AuthorAdmin(admin.ModelAdmin):
+class StudentAdmin(ImportExportModelAdmin, ExportMixin, admin.ModelAdmin):
+    list_display = ('carnet', 'nombre_completo', 'grado', 'semestre', 'circulo')
+    list_filter = ('grado', 'semestre', 'circulo')
+    def get_import_formats(self):
+            """
+            Returns available export formats.
+            """
+            formats = (
+                  base_formats.CSV,
+                  base_formats.XLS,
+                  base_formats.XLSX,
+                  base_formats.JSON,
+            )
+            return [f for f in formats if f().can_export()]
+    def get_export_formats(self):
+            """
+            Returns available export formats.
+            """
+            formats = (
+                  base_formats.CSV,
+                  base_formats.XLSX,
+            )
+            return [f for f in formats if f().can_export()]
 
-    list_display = ('student_carnet', 'student_name', 'student_grade', 'student_semester')
-    list_filter = ('student_grade', 'student_semester')
-
+    resource_class = StudentResource
 
 class CyD(admin.ModelAdmin):
+    list_display = ('departamento', 'coordinacion')
     form = ListaDepartamentoForm
 
-admin.site.register(Student, AuthorAdmin) 
+class Prueba(admin.ModelAdmin):
+    list_display = ('codigo_circulo', 'coordinacion')
+
+admin.site.register(Student, StudentAdmin)
 admin.site.register(ListaDepartamento, CyD)
-admin.site.register(Circle)
+admin.site.register(Circle, Prueba)

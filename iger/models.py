@@ -1,18 +1,19 @@
 from django.db import models
 
 class Student(models.Model):
-    student_carnet = models.CharField(max_length=15, primary_key=True)
-    student_name = models.CharField(max_length=35)
-    student_grade = models.IntegerField()
-    student_semester = models.IntegerField()
-    def __str__(self):
-        return self.student_carnet
+    carnet = models.CharField(max_length=15, primary_key=True)
+    nombre_completo = models.CharField(max_length=35)
+    grado = models.IntegerField()
+    semestre = models.IntegerField()
+    circulo = models.ForeignKey('Circle', models.SET_NULL, blank=True, null=True)
+    # def __str__(self):
+    #     return self.carnet
     def get_name(self):
-        return self.student_name
+        return self.nombre_completo
     def get_grade(self):
-        return self.student_grade
+        return self.grado
     def get_semester(self):
-        return self.student_semester
+        return self.semestre
 
 class ListaDepartamento(models.Model):
     coordinacion = models.CharField(max_length=2)
@@ -24,17 +25,14 @@ class ListaDepartamento(models.Model):
         return self.coordinacion
 
 class Circle(models.Model):
-    circle_code = models.CharField(max_length=20, primary_key=True)
-    name_coor = models.CharField(max_length=20)
-    id_coor = models.IntegerField()
-    num_x = models.IntegerField()
-    circle_number = models.IntegerField()
+    codigo_circulo = models.CharField(max_length=20, primary_key=True)
+    coordinacion = models.ForeignKey('ListaDepartamento', models.CASCADE)
 
     def get_circle_code(self):
-        return self.circle_code
+        return self.codigo_circulo
 
     def get_name_coor(self):
-        return self.name_coor
+        return self.coordinacion
 
     #def __str__(self):
         #return self.id_coor + self.num_x + self.circle_number

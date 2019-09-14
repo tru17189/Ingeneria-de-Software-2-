@@ -7,12 +7,17 @@ from .models import Circle
 
 class StudentTestCase(TestCase):
     def test_get_student(self):
-        Student.objects.create(student_carnet="101", student_name="John Doe",student_grade=1,student_semester=2)
+        ListaDepartamento.objects.create(coordinacion = "02", departamento="Guatemala 2")
+        depa = ListaDepartamento.objects.get(pk="Guatemala 2")
+        Circle.objects.create(codigo_circulo="010203", coordinacion=depa)
+        circulo = Circle.objects.get(pk="010203")
+        Student.objects.create(carnet="101", nombre_completo="John Doe",grado=1,semestre=2, circulo=circulo)
         estudiante = Student.objects.get(pk="101")
-        self.assertEqual(estudiante.student_carnet, '101')
-        self.assertEqual(estudiante.student_name, 'John Doe')
-        self.assertEqual(estudiante.student_grade, 1)
-        self.assertEqual(estudiante.student_semester, 2)
+        self.assertEqual(estudiante.carnet, '101')
+        self.assertEqual(estudiante.nombre_completo, 'John Doe')
+        self.assertEqual(estudiante.grado, 1)
+        self.assertEqual(estudiante.semestre, 2)
+        self.assertEqual(estudiante.circulo, circulo)
 
 class ListaDepartamentoTestCase(TestCase):
     def test_get_ListaDepartamento(self):
@@ -22,15 +27,15 @@ class ListaDepartamentoTestCase(TestCase):
         self.assertEqual(pruebaDepartamento.departamento, 'Guatemala 2')
 
 
-#class createCircleTestCase(TestCase):
- #   def test_get_createCircle(self):
-  #      Circle.objects.create(circle_code="010203", name_coor="COBÁN",id_coor="1",num_x="02",circle_number="03")
-   #     pruebaCirculo = Circle.objects.get(pk="010203")
-    #    self.assertEqual(pruebaCirculo.circle_code, '010203')
-     #   self.assertEqual(pruebaCirculo.name_coor, 'COBÁN')
-      #  self.assertEqual(pruebaCirculo.id_coor, '1')
-       # self.assertEqual(pruebaCirculo.num_x, '02')
-        #self.assertEqual(pruebaCirculo.circle_number, '03')
+class createCircleTestCase(TestCase):
+   def test_get_createCircle(self):
+       ListaDepartamento.objects.create(coordinacion = "02", departamento="Guatemala 2")
+       depa = ListaDepartamento.objects.get(pk="Guatemala 2")
+       Circle.objects.create(codigo_circulo="010203", coordinacion=depa)
+       pruebaCirculo = Circle.objects.get(pk="010203")
+       self.assertEqual(pruebaCirculo.codigo_circulo, '010203')
+       self.assertEqual(pruebaCirculo.coordinacion, depa)
+
 
 
 
