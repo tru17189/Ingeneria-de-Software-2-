@@ -69,10 +69,10 @@ def create_circle(request):
 
 def detail(request, student_carnet):
     try:
-        student = Student.objects.get(carnet=student_carnet)         
+        student = Student.objects.get(student_carnet=student_carnet)         
     except Student.DoesNotExist:
         try:
-            student = Student.objects.get(nombre_completo=student_carnet)
+            student = Student.objects.get(student_name=student_carnet)
         except Student.DoesNotExist:
             raise Http500("El alumno no existe, ingrese nuevamente sus credenciales")
     

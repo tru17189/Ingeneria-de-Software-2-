@@ -1,21 +1,18 @@
 from django.db import models
 
 class Student(models.Model):
-    carnet = models.CharField(max_length=15, primary_key=True)
-    nombre_completo = models.CharField(max_length=35)
-    grado = models.IntegerField()
-    semestre = models.IntegerField()
-    # circulo = models.ForeignKey('Circle', models.SET_NULL, blank=True, null=True)
-    # def __str__(self):
-    #     return self.student_carnet
+    student_carnet = models.CharField(max_length=15, primary_key=True)
+    student_name = models.CharField(max_length=35)
+    student_grade = models.IntegerField()
+    student_semester = models.IntegerField()
+    def __str__(self):
+        return self.student_carnet
     def get_name(self):
-        return self.nombre_completo
+        return self.student_name
     def get_grade(self):
-        return self.grado
+        return self.student_grade
     def get_semester(self):
-        return self.semestre
-    # def get_circle(self):
-    #     return self.circulo
+        return self.student_semester
 
 class ListaDepartamento(models.Model):
     coordinacion = models.CharField(max_length=2)
