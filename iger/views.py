@@ -17,7 +17,10 @@ def libro(request):
     return render_to_response('iger/Libros/English/story_html5.html')
 	
 def libro_mate(request):
-    return render(request, 'iger/Libros/4to(primer_semestre)/Matematica_Financiera/story_html5.html')
+    return render(request, 'booksIger/Matematica_Financiera/story_html5.html')
+	
+def libro_mate1(request):
+    return render(request, 'iger/Libros/visualizadores/libroMate.html')
 
 def nombre(request):
     return render(request, 'iger/nombre.html')
