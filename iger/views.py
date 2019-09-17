@@ -31,22 +31,22 @@ def students(request):
     return render(request, 'iger/students.html', context)
 
 
-def detail(request, student_carnet):
+def detail(request, carnet):
     try:
-        student = Student.objects.get(student_carnet=student_carnet)         
+        student = Student.objects.get(carnet=carnet)         
     except Student.DoesNotExist:
         try:
-            student = Student.objects.get(student_name=student_carnet)
+            student = Student.objects.get(nombre_completo=nombre_completo)
         except Student.DoesNotExist:
             raise Http500("El alumno no existe, ingrese nuevamente sus credenciales")
     
-    if (student.student_grade == 4):
-        if(student.student_semester == 1):
+    if (student.grado == 4):
+        if(student.semestre == 1):
             return render(request, 'iger/semester.html', {'student': student})
         else:
             return render(request, 'iger/Semester2.html', {'student': student})
     else:
-        if(student.student_semester == 1):
+        if(student.semestre == 1):
             return render(request, 'iger/QuintoSemester.html', {'student': student})
         else:
             return render(request, 'iger/QuintoSemester2.html', {'student': student})
