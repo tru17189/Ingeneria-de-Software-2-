@@ -6,7 +6,7 @@ Feature: Testing Functionality
 			Then I will go to the admin view
 			
 	Scenario: Search for an existing student and load instructions
-		Given I search for an existing student with carnet "17102"
+		Given I search for an existing student with carnet "13092019"
 		Then the resulting page will be the instructions
 		
 	Scenario: Go to the books page
