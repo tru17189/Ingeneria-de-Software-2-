@@ -72,5 +72,7 @@ def step_impl(context):
 
 @then('I will go to the books view')
 def step_impl(context):
+    elem = driver.find_element_by_tag_name('div')
+    elem.click()
     assert True
 
