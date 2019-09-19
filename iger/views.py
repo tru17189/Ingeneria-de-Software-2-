@@ -21,6 +21,12 @@ def libro_mate(request):
 	
 def libro_mate1(request):
     return render(request, 'iger/Libros/visualizadores/libroMate.html')
+	
+def libro_Ingles1(request):
+    return render(request, 'iger/Libros/visualizadores/libroIngles.html')
+	
+def libro_Fisica1(request):
+    return render(request, 'iger/Libros/visualizadores/libroFisica.html')
 
 def nombre(request):
     return render(request, 'iger/nombre.html')
