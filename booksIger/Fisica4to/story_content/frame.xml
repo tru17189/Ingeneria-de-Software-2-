@@ -1,0 +1,1486 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bwFrame xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" default_layout="npnxnanbnsnfns00001010101" textdirection="ltr" device="false" fontscale="135" kbshortcuts="false" skip_nav_enabled="true" chromeless="false" outputtype="undefined" theme="classic">
+  <layouts>
+    <layout name="npnxnanbsnfns00001010101" font="Tw Cen MT" controllayout="npnxnanbsnfns00001010101" colorscheme="npnxnanbnsnfns00001010101" string_table="npnxnanbnsnfns00001010101" />
+    <layout name="pxabnsnfns00001010101" font="Tw Cen MT" controllayout="pxabnsnfns00001010101" colorscheme="npnxnanbnsnfns00001010101" string_table="npnxnanbnsnfns00001010101" />
+    <layout name="npxnabnsnfns00001010101" font="Tw Cen MT" controllayout="npxnabnsnfns00001010101" colorscheme="npnxnanbnsnfns00001010101" string_table="npnxnanbnsnfns00001010101" />
+    <layout name="npnxnanbnsnfns00001010101" font="Tw Cen MT" controllayout="npnxnanbnsnfns00001010101" colorscheme="npnxnanbnsnfns00001010101" string_table="npnxnanbnsnfns00001010101" />
+    <layout name="pxabnsnfns00001010100" font="Tw Cen MT" controllayout="pxabnsnfns00001010100" colorscheme="npnxnanbnsnfns00001010101" string_table="npnxnanbnsnfns00001010101" />
+    <layout name="pnxanbnsnfns00001010101" font="Tw Cen MT" controllayout="pnxanbnsnfns00001010101" colorscheme="npnxnanbnsnfns00001010101" string_table="npnxnanbnsnfns00001010101" />
+  </layouts>
+  <control_options>
+    <optiongroups>
+      <optiongroup name="sidebaroptions">
+        <options>
+          <option name="title_enabled" value="true">
+            <options>
+              <option name="title_text" value="Física" />
+            </options>
+          </option>
+          <option name="logo_enabled" value="false">
+            <options />
+          </option>
+          <option name="sidebar_enabled" value="true">
+            <options>
+              <option name="sidebarpos" value="left" />
+            </options>
+          </option>
+          <optionlist name="tabs">
+            <listitems>
+              <listitem name="customlink" value="true" group="linkleft">
+                <properties>
+                  <property name="title" value="4to Bachillerato - Grupo Polochic" />
+                  <property name="data" value="6MlcnKso8md" />
+                  <property name="ignoreSlideLock" value="true" />
+                </properties>
+              </listitem>
+              <listitem name="resources" value="false" group="linkright" />
+              <listitem name="customlink" value="true" group="linkright">
+                <properties>
+                  <property name="title" value="Inicio" />
+                  <property name="data" value="6nC1zrWyb4z" />
+                  <property name="ignoreSlideLock" value="true" />
+                </properties>
+              </listitem>
+              <listitem name="customlink" value="true" group="linkright">
+                <properties>
+                  <property name="title" value="Créditos" />
+                  <property name="data" value="6Jbxs3LZXnu" />
+                  <property name="ignoreSlideLock" value="true" />
+                </properties>
+              </listitem>
+              <listitem name="customlink" value="true" group="linkright">
+                <properties>
+                  <property name="title" value="Referencias" />
+                  <property name="data" value="6S3MsPIEqrU" />
+                  <property name="ignoreSlideLock" value="true" />
+                </properties>
+              </listitem>
+              <listitem name="outline" value="true" group="sidebar" />
+              <listitem name="glossary" value="true" group="sidebar" />
+              <listitem name="transcript" value="false" group="sidebar" />
+            </listitems>
+          </optionlist>
+          <option name="time_enabled" value="false">
+            <options>
+              <option name="time_format" value="" />
+            </options>
+          </option>
+          <option name="video_enabled" value="false">
+            <options>
+              <option name="height" value="135" />
+            </options>
+          </option>
+        </options>
+      </optiongroup>
+      <optiongroup name="menuoptions">
+        <options>
+          <option name="flow" value="free" />
+          <option name="wraplistitems" value="true" />
+          <option name="tooltips" value="true" />
+          <option name="autocollapse" value="true" />
+          <option name="autonumber" value="false" />
+          <option name="enableresultsicons" value="true" />
+        </options>
+      </optiongroup>
+      <optiongroup name="controls">
+        <options>
+          <option name="volume" value="true" />
+          <option name="seekbar" value="false">
+            <options>
+              <option name="readonly" value="false" />
+            </options>
+          </option>
+          <option name="pauseplay" value="false" />
+          <option name="replay" value="false" />
+          <option name="search" value="false" />
+          <option name="closed_captions" value="false">
+            <options>
+              <option name="font" value="Tw Cen MT" />
+            </options>
+          </option>
+        </options>
+      </optiongroup>
+      <optiongroup name="bottombaroptions">
+        <options>
+          <option name="bottombar_enabled" value="true" />
+        </options>
+      </optiongroup>
+      <optiongroup name="buttonoptions">
+        <options>
+          <option name="next" value="icon" />
+          <option name="previous" value="icon" />
+          <option name="submit" value="icon" />
+        </options>
+      </optiongroup>
+    </optiongroups>
+  </control_options>
+  <control_layouts>
+    <control_layout name="npnxnanbsnfns00001010101">
+      <control name="volume" enabled="true" />
+      <control name="seekbar" enabled="false" />
+      <control name="replay" enabled="false" />
+      <control name="pauseplay" enabled="false" />
+      <control name="logo" enabled="false" />
+      <control name="previous" enabled="false" />
+      <control name="next" enabled="false" />
+      <control name="swipeleft" enabled="false" />
+      <control name="swiperight" enabled="false" />
+      <control name="submit" enabled="true" />
+      <control name="finish" enabled="false" />
+      <control name="submitall" enabled="false" />
+      <control name="resources" enabled="false" />
+      <control name="glossary" enabled="true" />
+      <control name="transcript" enabled="false" />
+      <control name="outline" enabled="true">
+        <controls>
+          <control name="search" enabled="false" />
+        </controls>
+      </control>
+      <control name="close_btn" enabled="true" />
+    </control_layout>
+    <control_layout name="pxabnsnfns00001010101">
+      <control name="volume" enabled="true" />
+      <control name="seekbar" enabled="false" />
+      <control name="replay" enabled="false" />
+      <control name="pauseplay" enabled="false" />
+      <control name="logo" enabled="false" />
+      <control name="previous" enabled="true" />
+      <control name="next" enabled="true" />
+      <control name="swipeleft" enabled="true" />
+      <control name="swiperight" enabled="true" />
+      <control name="submit" enabled="false" />
+      <control name="finish" enabled="false" />
+      <control name="submitall" enabled="false" />
+      <control name="resources" enabled="false" />
+      <control name="glossary" enabled="true" />
+      <control name="transcript" enabled="false" />
+      <control name="outline" enabled="true">
+        <controls>
+          <control name="search" enabled="false" />
+        </controls>
+      </control>
+      <control name="close_btn" enabled="true" />
+    </control_layout>
+    <control_layout name="npxnabnsnfns00001010101">
+      <control name="volume" enabled="true" />
+      <control name="seekbar" enabled="false" />
+      <control name="replay" enabled="false" />
+      <control name="pauseplay" enabled="false" />
+      <control name="logo" enabled="false" />
+      <control name="previous" enabled="false" />
+      <control name="next" enabled="true" />
+      <control name="swipeleft" enabled="false" />
+      <control name="swiperight" enabled="true" />
+      <control name="submit" enabled="false" />
+      <control name="finish" enabled="false" />
+      <control name="submitall" enabled="false" />
+      <control name="resources" enabled="false" />
+      <control name="glossary" enabled="true" />
+      <control name="transcript" enabled="false" />
+      <control name="outline" enabled="true">
+        <controls>
+          <control name="search" enabled="false" />
+        </controls>
+      </control>
+      <control name="close_btn" enabled="true" />
+    </control_layout>
+    <control_layout name="npnxnanbnsnfns00001010101">
+      <control name="volume" enabled="true" />
+      <control name="seekbar" enabled="false" />
+      <control name="replay" enabled="false" />
+      <control name="pauseplay" enabled="false" />
+      <control name="logo" enabled="false" />
+      <control name="previous" enabled="false" />
+      <control name="next" enabled="false" />
+      <control name="swipeleft" enabled="false" />
+      <control name="swiperight" enabled="false" />
+      <control name="submit" enabled="false" />
+      <control name="finish" enabled="false" />
+      <control name="submitall" enabled="false" />
+      <control name="resources" enabled="false" />
+      <control name="glossary" enabled="true" />
+      <control name="transcript" enabled="false" />
+      <control name="outline" enabled="true">
+        <controls>
+          <control name="search" enabled="false" />
+        </controls>
+      </control>
+      <control name="close_btn" enabled="true" />
+    </control_layout>
+    <control_layout name="pxabnsnfns00001010100">
+      <control name="volume" enabled="true" />
+      <control name="seekbar" enabled="false" />
+      <control name="replay" enabled="false" />
+      <control name="pauseplay" enabled="false" />
+      <control name="logo" enabled="false" />
+      <control name="previous" enabled="true" />
+      <control name="next" enabled="true" />
+      <control name="swipeleft" enabled="true" />
+      <control name="swiperight" enabled="true" />
+      <control name="submit" enabled="false" />
+      <control name="finish" enabled="false" />
+      <control name="submitall" enabled="false" />
+      <control name="resources" enabled="false" />
+      <control name="glossary" enabled="true" />
+      <control name="transcript" enabled="false" />
+      <control name="outline" enabled="true">
+        <controls>
+          <control name="search" enabled="false" />
+        </controls>
+      </control>
+      <control name="close_btn" enabled="false" />
+    </control_layout>
+    <control_layout name="pnxanbnsnfns00001010101">
+      <control name="volume" enabled="true" />
+      <control name="seekbar" enabled="false" />
+      <control name="replay" enabled="false" />
+      <control name="pauseplay" enabled="false" />
+      <control name="logo" enabled="false" />
+      <control name="previous" enabled="true" />
+      <control name="next" enabled="false" />
+      <control name="swipeleft" enabled="true" />
+      <control name="swiperight" enabled="false" />
+      <control name="submit" enabled="false" />
+      <control name="finish" enabled="false" />
+      <control name="submitall" enabled="false" />
+      <control name="resources" enabled="false" />
+      <control name="glossary" enabled="true" />
+      <control name="transcript" enabled="false" />
+      <control name="outline" enabled="true">
+        <controls>
+          <control name="search" enabled="false" />
+        </controls>
+      </control>
+      <control name="close_btn" enabled="true" />
+    </control_layout>
+  </control_layouts>
+  <colorschemes>
+    <colorscheme name="npnxnanbnsnfns00001010101">
+      <color_group name="infopanel">
+        <group_colors>
+          <color name="link_text">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x7C2280" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="link_hover">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x0000EE" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="bg">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xFFFFFF" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="shadow">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xB8B8B8" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="name_text">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x444444" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="title_text">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x999999" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+        </group_colors>
+      </color_group>
+      <color_group name="infopanelpopup">
+        <group_colors>
+          <color name="link_text">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x7C2280" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="link_hover">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x0000EE" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="bg">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xE9E9E9" alpha="100" stop="0" />
+                <color rgb="0xCFCFCF" alpha="100" stop="255" />
+              </colors>
+            </fill>
+          </color>
+          <color name="shadow">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xB8B8B8" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="name_text">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x444444" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="bio_text">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x999999" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+        </group_colors>
+      </color_group>
+      <color_group name="timer">
+        <group_colors>
+          <color name="duration">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x00D7FF" alpha="100" stop="0" />
+                <color rgb="0x00ABFF" alpha="100" stop="255" />
+              </colors>
+            </fill>
+          </color>
+          <color name="elapsed">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xFEE347" alpha="100" stop="0" />
+                <color rgb="0xFCCC2A" alpha="100" stop="255" />
+              </colors>
+            </fill>
+          </color>
+          <color name="stroke">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xC7C7C7" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="inner">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xFFFFFF" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="text">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x555555" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+        </group_colors>
+      </color_group>
+      <color_group name="window">
+        <group_colors>
+          <color name="text">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x555555" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="inner">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xEAEAEA" alpha="100" stop="0" />
+                <color rgb="0xCFCFCF" alpha="100" stop="255" />
+              </colors>
+            </fill>
+          </color>
+          <color name="bg">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xF3F3F3" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="diva">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xF7F7F7" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="divb">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xD3D3D3" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="shadow">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x000000" alpha="20" stop="0" />
+              </colors>
+            </fill>
+          </color>
+        </group_colors>
+      </color_group>
+      <color_group name="editor">
+        <group_colors>
+          <color name="slide_text">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x555555" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="html_text">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x444444" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="btn_bg">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xF5F5F5" alpha="100" stop="0" />
+                <color rgb="0xC7C7C7" alpha="100" stop="255" />
+              </colors>
+            </fill>
+          </color>
+          <color name="btn_hover">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xF2F2F2" alpha="100" stop="0" />
+                <color rgb="0xAFAFAF" alpha="100" stop="255" />
+              </colors>
+            </fill>
+          </color>
+          <color name="btn_down">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xC7C7C7" alpha="100" stop="0" />
+                <color rgb="0xF4F4F4" alpha="100" stop="255" />
+              </colors>
+            </fill>
+          </color>
+          <color name="btn_border">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xB1B1B1" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="btn_text">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x353535" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="btn_text_shadow">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xF0F0F0" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+        </group_colors>
+      </color_group>
+      <color_group name="listitem">
+        <group_colors>
+          <color name="selected_text">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x353535" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="lines">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xDFDFDF" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="hover">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x92D050" alpha="50" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="viewed">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x198130" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="text">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x353535" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="selected">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x92D050" alpha="50" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="shadow">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xFFFFFF" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+        </group_colors>
+      </color_group>
+      <color_group name="base">
+        <group_colors>
+          <color name="text">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x262626" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="diva">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xD3D3D3" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="divb">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xF7F7F7" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="bg">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x71BD96" alpha="100" stop="0" />
+                <color rgb="0x343434" alpha="100" stop="255" />
+              </colors>
+            </fill>
+          </color>
+          <color name="border">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xE9E9E9" alpha="100" stop="0" />
+                <color rgb="0xF3F3F3" alpha="100" stop="255" />
+              </colors>
+            </fill>
+          </color>
+          <color name="menu_shade">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x6FBE94" alpha="50" stop="0" />
+                <color rgb="0x363736" alpha="50" stop="255" />
+              </colors>
+            </fill>
+          </color>
+          <color name="slide_bg">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xFFFFFF" alpha="100" stop="0" />
+                <color rgb="0x058847" alpha="100" stop="255" />
+              </colors>
+            </fill>
+          </color>
+        </group_colors>
+      </color_group>
+      <color_group name="button">
+        <group_colors>
+          <color name="btn_bg">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x195A53" alpha="100" stop="0" />
+                <color rgb="0x065C46" alpha="100" stop="255" />
+              </colors>
+            </fill>
+          </color>
+          <color name="btn_hover">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x3CB878" alpha="100" stop="0" />
+                <color rgb="0x43A532" alpha="100" stop="255" />
+              </colors>
+            </fill>
+          </color>
+          <color name="btn_down">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xC7C7C7" alpha="100" stop="0" />
+                <color rgb="0xF4F4F4" alpha="100" stop="255" />
+              </colors>
+            </fill>
+          </color>
+          <color name="btn_border">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xE46C0A" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="btn_text">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xF2F2F2" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="btn_text_shadow">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x028C3D" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="btn_icon_color">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xD9D9D9" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="btn_glow">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xCFCFCF" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+        </group_colors>
+      </color_group>
+      <color_group name="checkbox">
+        <group_colors>
+          <color name="border">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xB8B8B8" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="bg">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xFFFFFF" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="check">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x33CC00" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="text">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x444444" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="hover">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x6BF8FF" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+        </group_colors>
+      </color_group>
+      <color_group name="logo">
+        <group_colors>
+          <color name="bg">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xFFFFFF" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="shadow">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xB8B8B8" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+        </group_colors>
+      </color_group>
+      <color_group name="menu">
+        <group_colors>
+          <color name="bg">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xF3F3F3" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="shadow">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xB8B8B8" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+        </group_colors>
+      </color_group>
+      <color_group name="scrollarea">
+        <group_colors>
+          <color name="bg">
+            <fill type="linear" rotation="0">
+              <colors>
+                <color rgb="0xFFFFFF" alpha="100" stop="0" />
+                <color rgb="0xE8E8E8" alpha="100" stop="128" />
+              </colors>
+            </fill>
+          </color>
+          <color name="border">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xF6F6F6" alpha="100" stop="0" />
+                <color rgb="0xF3F3F3" alpha="100" stop="255" />
+              </colors>
+            </fill>
+          </color>
+          <color name="button_bg">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x70B993" alpha="100" stop="0" />
+                <color rgb="0x71BA94" alpha="100" stop="255" />
+              </colors>
+            </fill>
+          </color>
+          <color name="button_inner">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x028C3D" alpha="100" stop="0" />
+                <color rgb="0x028C3D" alpha="100" stop="255" />
+              </colors>
+            </fill>
+          </color>
+          <color name="button_border">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x028C3D" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="icons">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xF2F2F2" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="shadow">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x028C3D" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="detaila">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xA7A7A7" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="detailb">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xCFCFCF" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+        </group_colors>
+      </color_group>
+      <color_group name="searchinput">
+        <group_colors>
+          <color name="bg">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xDFDFDF" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="border">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xADADAD" alpha="100" stop="0" />
+                <color rgb="0xFAFAFA" alpha="100" stop="255" />
+              </colors>
+            </fill>
+          </color>
+          <color name="icon">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x8A8A8A" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="button_hover">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xF5F5F5" alpha="100" stop="0" />
+                <color rgb="0xC7C7C7" alpha="100" stop="255" />
+              </colors>
+            </fill>
+          </color>
+          <color name="hover_glow">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x6BF8FF" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="search_text">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x8A8A8A" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="bg_active">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xFAFAFA" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="text_active">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x333333" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+        </group_colors>
+      </color_group>
+      <color_group name="seekcontrol">
+        <group_colors>
+          <color name="bg">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xF5F5F5" alpha="100" stop="0" />
+                <color rgb="0xC7C7C7" alpha="100" stop="255" />
+              </colors>
+            </fill>
+          </color>
+          <color name="border">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xB1B1B1" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="seek_border">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xB8B8B8" alpha="100" stop="0" />
+                <color rgb="0xEEEEEE" alpha="100" stop="255" />
+              </colors>
+            </fill>
+          </color>
+          <color name="seek_bg">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xE7E7E7" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="seek_position">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xFFFFFF" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="btn_icon_color">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x2D2D2D" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="btn_icon_hover">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x555555" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="btn_icon_shadow">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xF0F0F0" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+        </group_colors>
+      </color_group>
+      <color_group name="tabs">
+        <group_colors>
+          <color name="bg">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xF3F3F3" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="text">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x555555" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="selected">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x333333" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="hover">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x333333" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="shadow">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xF0F0F0" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+        </group_colors>
+      </color_group>
+      <color_group name="transcript">
+        <group_colors>
+          <color name="div">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xE1E1E1" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="heading_text">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x444444" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+        </group_colors>
+      </color_group>
+      <color_group name="outline">
+        <group_colors>
+          <color name="diva">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xC6C6C6" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="divb">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xF9F9F9" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="divc">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xE1E1E1" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="search_text">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x444444" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="search_hover">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x0000EE" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+        </group_colors>
+      </color_group>
+      <color_group name="resource">
+        <group_colors>
+          <color name="separator">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xE0E0E0" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+        </group_colors>
+      </color_group>
+      <color_group name="glossary">
+        <group_colors>
+          <color name="selected_text">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x00B050" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="selected">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xB2DF4E" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="text">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x353535" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="hover">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xAFDF4E" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="diva">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xE2E2E2" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="divb">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xE2E2E2" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="divc">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xFAFAFA" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="bg">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xE7E7E7" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="heading_text">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x16702A" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+        </group_colors>
+      </color_group>
+      <color_group name="volume">
+        <group_colors>
+          <color name="thumb_border">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xA5A5A5" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="thumb_inner">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xD4D4D4" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="thumb_bg">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xC8C8C8" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="slider_border">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xF2F2F2" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="slider_bg">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xBCBCBC" alpha="100" stop="0" />
+                <color rgb="0xBCBCBC" alpha="100" stop="128" />
+                <color rgb="0xC3C3C3" alpha="100" stop="255" />
+              </colors>
+            </fill>
+          </color>
+        </group_colors>
+      </color_group>
+      <color_group name="HTML">
+        <group_colors>
+          <color name="htmlpage_bg_color">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xFFFFFF" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+        </group_colors>
+      </color_group>
+    </colorscheme>
+  </colorschemes>
+  <string_tables>
+    <string_table name="npnxnanbnsnfns00001010101">
+      <string id="more_info">Más información</string>
+      <string id="bio">Biografía</string>
+      <string id="prev">anterior</string>
+      <string id="acc_previous">siguiente</string>
+      <string id="clear">Borrar y volver al menú</string>
+      <string id="close">Cerrar</string>
+      <string id="continue">Continuar</string>
+      <string id="continueresponsive">Continuar</string>
+      <string id="submit">Continuar</string>
+      <string id="acc_submit">presentar</string>
+      <string id="submitall">ENVIAR TODO</string>
+      <string id="acc_submitall">enviar todo</string>
+      <string id="filter">Filtro</string>
+      <string id="acc_finish">finalizar</string>
+      <string id="acc_pause">pausa</string>
+      <string id="restart">Reiniciar</string>
+      <string id="acc_replay">repetición</string>
+      <string id="acc_play">jugar</string>
+      <string id="next">siguiente</string>
+      <string id="acc_next">siguiente</string>
+      <string id="finish">FINALIZAR</string>
+      <string id="acc_search_input">búsqueda</string>
+      <string id="acc_volume">volumen</string>
+      <string id="acc_definition">definición</string>
+      <string id="definition">Definición</string>
+      <string id="search_results">Resultados de la búsqueda</string>
+      <string id="terms">Condiciones</string>
+      <string id="search_in">Buscar en:</string>
+      <string id="send_an_email">Enviar correo electrónico</string>
+      <string id="transcript_chk">Notas</string>
+      <string id="slide_text_chk">Texto Diapositiva</string>
+      <string id="search">Buscar ...</string>
+      <string id="question_list">Lista de preguntas</string>
+      <string id="check_include">De verificación para incluir</string>
+      <string id="disabled_orientation">Rote el dispositivo</string>
+      <string id="closed_captions">Subtítulos</string>
+      <string id="glossary">Glosario</string>
+      <string id="outline">Menú</string>
+      <string id="transcript">Notas</string>
+      <string id="resources">Claves</string>
+      <string id="acc_resources">los recursos</string>
+      <string id="exit">Salir</string>
+      <string id="resume">Continuar</string>
+      <string id="acc_skipnavigation">Omitir navegación. Presiona Aceptar para volver a la diapositiva.</string>
+      <string id="acc_closed_captions">Subtítulos cerrados. Presiona la barra de espacio para activar y desactivar los subtítulos.</string>
+      <string id="acc_active">activo</string>
+    </string_table>
+  </string_tables>
+  <fonts>
+    <font name="Tw Cen MT">
+      <files>
+        <file bold="true" italic="false" />
+        <file bold="false" italic="false" />
+      </files>
+    </font>
+    <font name="Arial">
+      <files>
+        <file bold="false" italic="false" />
+      </files>
+    </font>
+  </fonts>
+  <sounds enabled="true" />
+  <nav_data>
+    <outline>
+      <links>
+        <slidelink slideid="_player.5vOPrtlabkb.6405bFjpfnY" displaytext="Inicio" expand="false" type="slide" />
+        <slidelink slideid="_player.6JFdHPNdOOr.6lKmm8AxCLw" displaytext=" 1. Vectores" expand="false" type="slide">
+          <links>
+            <slidelink slideid="_player.6JFdHPNdOOr.6ou8KDovdJ7" displaytext="Para comenzar" expand="false" type="slide" />
+            <slidelink slideid="_player.6JFdHPNdOOr.636wePpDtgN" displaytext="El mundo de la física" expand="false" type="slide" />
+            <slidelink slideid="_player.6JFdHPNdOOr.5fxuGG6bwuD" displaytext="Recuerde lo aprendido" expand="false" type="slide" />
+            <slidelink slideid="_player.6JFdHPNdOOr.5XJCJxyRHYl" displaytext="Navegue en la red" expand="false" type="slide" />
+            <slidelink slideid="_player.6JFdHPNdOOr.5sViTczwnov" displaytext="Autoevaluación" expand="false" type="slide" />
+          </links>
+        </slidelink>
+        <slidelink slideid="_player.6NPW1xXt47a.64ysNLpGbqT" displaytext=" 2. Movimiento" expand="false" type="slide">
+          <links>
+            <slidelink slideid="_player.6NPW1xXt47a.6FzQJZ6619e" displaytext="Para comenzar" expand="false" type="slide" />
+            <slidelink slideid="_player.6NPW1xXt47a.6ayhhWldgjw" displaytext="El mundo de la física" expand="false" type="slide" />
+            <slidelink slideid="_player.6NPW1xXt47a.618aPZm0FjY" displaytext="Recuerde lo aprendido" expand="false" type="slide" />
+            <slidelink slideid="_player.6NPW1xXt47a.6GHbkQSToD1" displaytext="Navegue en la red" expand="false" type="slide" />
+            <slidelink slideid="_player.6NPW1xXt47a.6ZBHkTlmwB3" displaytext="Autoevaluación" expand="false" type="slide" />
+          </links>
+        </slidelink>
+        <slidelink slideid="_player.65DbW3tjpr2.6D6DwZ80fyq" displaytext=" 3. Movimiento circular" expand="false" type="slide">
+          <links>
+            <slidelink slideid="_player.65DbW3tjpr2.6mQ7QOBuKek" displaytext="Para comenzar" expand="false" type="slide" />
+            <slidelink slideid="_player.65DbW3tjpr2.5Y89XBYvXvn" displaytext="El mundo de la física" expand="false" type="slide" />
+            <slidelink slideid="_player.65DbW3tjpr2.6kIxeWuD8pc" displaytext="Recuerde lo aprendido" expand="false" type="slide" />
+            <slidelink slideid="_player.65DbW3tjpr2.5rhkXBY53hi" displaytext="Navegue en la red" expand="false" type="slide" />
+            <slidelink slideid="_player.65DbW3tjpr2.6kciFNK1i6K" displaytext="Autoevaluación" expand="false" type="slide" />
+          </links>
+        </slidelink>
+        <slidelink slideid="_player.6Q0YThDq7OH.6J3dYwPuIff" displaytext=" 4. Leyes de Newton" expand="false" type="slide">
+          <links>
+            <slidelink slideid="_player.6Q0YThDq7OH.5nBShxjHdql" displaytext="Para comenzar" expand="false" type="slide" />
+            <slidelink slideid="_player.6Q0YThDq7OH.5ppqhJYLeQD" displaytext="El mundo de la física" expand="false" type="slide" />
+            <slidelink slideid="_player.6Q0YThDq7OH.63I3h3Rcfaq" displaytext="Recuerde lo aprendido" expand="false" type="slide" />
+            <slidelink slideid="_player.6Q0YThDq7OH.6Ev409Gc1pp" displaytext="Navegue en la red" expand="false" type="slide" />
+            <slidelink slideid="_player.6Q0YThDq7OH.68BLxyhnCjJ" displaytext="Autoevaluación" expand="false" type="slide" />
+          </links>
+        </slidelink>
+        <slidelink slideid="_player.5oZiDBc3cge.5WZjjcEPwJs" displaytext=" 5. Trabajo y energía" expand="false" type="slide">
+          <links>
+            <slidelink slideid="_player.5oZiDBc3cge.5jU4SW5v101" displaytext="Para comenzar" expand="false" type="slide" />
+            <slidelink slideid="_player.5oZiDBc3cge.6ZjSz7UibwD" displaytext="El mundo de la física" expand="false" type="slide" />
+            <slidelink slideid="_player.5oZiDBc3cge.6Qmt8aLjXjz" displaytext="Recuerde lo aprendido" expand="false" type="slide" />
+            <slidelink slideid="_player.5oZiDBc3cge.68fRl0tJiYw" displaytext="Navegue en la red" expand="false" type="slide" />
+            <slidelink slideid="_player.5oZiDBc3cge.5v8aWH2TMG5" displaytext="Autoevaluación" expand="false" type="slide" />
+          </links>
+        </slidelink>
+        <slidelink slideid="_player.6KHcfjVjV4Z.6aMe0oRRshM" displaytext=" 6. Cantidad de movimiento" expand="false" type="slide">
+          <links>
+            <slidelink slideid="_player.6KHcfjVjV4Z.5zAutHxsbFE" displaytext="Para comenzar" expand="false" type="slide" />
+            <slidelink slideid="_player.6KHcfjVjV4Z.6cM7cj70foi" displaytext="El mundo de la física" expand="false" type="slide" />
+            <slidelink slideid="_player.6KHcfjVjV4Z.5qKRlbvCkkU" displaytext="Recuerde lo aprendido" expand="false" type="slide" />
+            <slidelink slideid="_player.6KHcfjVjV4Z.6PpP4bQuZTF" displaytext="Navegue en la red" expand="false" type="slide" />
+            <slidelink slideid="_player.6KHcfjVjV4Z.6q6QtJekVjY" displaytext="Autoevaluación" expand="false" type="slide" />
+          </links>
+        </slidelink>
+        <slidelink slideid="_player.5Zz3M6yVdV6.5WGYgBP9Xvl" displaytext=" 7. Impulso y colisión" expand="false" type="slide">
+          <links>
+            <slidelink slideid="_player.5Zz3M6yVdV6.5i4iyxDFUHC" displaytext="Para comenzar" expand="false" type="slide" />
+            <slidelink slideid="_player.5Zz3M6yVdV6.6WQNpl31sqR" displaytext="El mundo de la física" expand="false" type="slide" />
+            <slidelink slideid="_player.5Zz3M6yVdV6.6JickoNddUf" displaytext="Recuerde lo aprendido" expand="false" type="slide" />
+            <slidelink slideid="_player.5Zz3M6yVdV6.6QiQxumVEPI" displaytext="Navegue en la red" expand="false" type="slide" />
+            <slidelink slideid="_player.5Zz3M6yVdV6.6UdsILvWUNq" displaytext="Autoevaluación" expand="false" type="slide" />
+          </links>
+        </slidelink>
+        <slidelink slideid="_player.63dp6Qtauyr.5dVTtTj6ZIu" displaytext=" 8. Repaso semanas 1 a 7" expand="false" type="slide">
+          <links>
+            <slidelink slideid="_player.63dp6Qtauyr.6M7uPuNFI2U" displaytext="Para comenzar" expand="false" type="slide" />
+            <slidelink slideid="_player.63dp6Qtauyr.5nahnhYyASN" displaytext="El mundo de la física" expand="false" type="slide" />
+            <slidelink slideid="_player.63dp6Qtauyr.6awlObUjpE5" displaytext="Recuerde lo aprendido" expand="false" type="slide" />
+            <slidelink slideid="_player.63dp6Qtauyr.63ONR3hPrSJ" displaytext="Navegue en la red" expand="false" type="slide" />
+            <slidelink slideid="_player.63dp6Qtauyr.66nvxhfLfpT" displaytext="Autoevaluación" expand="false" type="slide" />
+          </links>
+        </slidelink>
+        <slidelink slideid="_player.6OWA0yi7rI8.6NJ9GlMDyY5" displaytext=" 9. La materia" expand="false" type="slide">
+          <links>
+            <slidelink slideid="_player.6OWA0yi7rI8.6HWAmRYJJd0" displaytext="Para comenzar" expand="false" type="slide" />
+            <slidelink slideid="_player.6OWA0yi7rI8.6Frbx0dWtWg" displaytext="El mundo de la física" expand="false" type="slide" />
+            <slidelink slideid="_player.6OWA0yi7rI8.6kylWr69mo5" displaytext="Recuerde lo aprendido" expand="false" type="slide" />
+            <slidelink slideid="_player.6OWA0yi7rI8.6ffEa9FfHj0" displaytext="Navegue en la red" expand="false" type="slide" />
+            <slidelink slideid="_player.6OWA0yi7rI8.5gs9XJ10ZKs" displaytext="Autoevaluación" expand="false" type="slide" />
+          </links>
+        </slidelink>
+        <slidelink slideid="_player.5zbImv0rZZp.5yBFahw51LL" displaytext="10. Fluidos" expand="false" type="slide">
+          <links>
+            <slidelink slideid="_player.5zbImv0rZZp.5yNSiyisxbt" displaytext="Para comenzar" expand="false" type="slide" />
+            <slidelink slideid="_player.5zbImv0rZZp.6nfPIj9X4uV" displaytext="El mundo de la física" expand="false" type="slide" />
+            <slidelink slideid="_player.5zbImv0rZZp.6e2zLay0ZbP" displaytext="Recuerde lo aprendido" expand="false" type="slide" />
+            <slidelink slideid="_player.5zbImv0rZZp.6h6F3OlACrW" displaytext="Navegue en la red" expand="false" type="slide" />
+            <slidelink slideid="_player.5zbImv0rZZp.6qCrymdNBtT" displaytext="Autoevaluación" expand="false" type="slide" />
+          </links>
+        </slidelink>
+        <slidelink slideid="_player.5oEZFMx6bFi.6EKZ6XoZtoB" displaytext="11. Temperatura y dilatación" expand="false" type="slide">
+          <links>
+            <slidelink slideid="_player.5oEZFMx6bFi.62J3CKgxlzj" displaytext="Para comenzar" expand="false" type="slide" />
+            <slidelink slideid="_player.5oEZFMx6bFi.61bNsc3uCkq" displaytext="El mundo de la física" expand="false" type="slide" />
+            <slidelink slideid="_player.5oEZFMx6bFi.5he5bvSLiDh" displaytext="Recuerde lo aprendido" expand="false" type="slide" />
+            <slidelink slideid="_player.5oEZFMx6bFi.6IXx1ZBKd9r" displaytext="Navegue en la red" expand="false" type="slide" />
+            <slidelink slideid="_player.5oEZFMx6bFi.6dFjVjysTSD" displaytext="Autoevaluación" expand="false" type="slide" />
+          </links>
+        </slidelink>
+        <slidelink slideid="_player.6jj4zzpj7HA.6DZt98XrOXB" displaytext="12. Gases" expand="false" type="slide">
+          <links>
+            <slidelink slideid="_player.6jj4zzpj7HA.6YNIXAvu4Uz" displaytext="Para comenzar" expand="false" type="slide" />
+            <slidelink slideid="_player.6jj4zzpj7HA.69jxyxWXdtc" displaytext="El mundo de la física" expand="false" type="slide" />
+            <slidelink slideid="_player.6jj4zzpj7HA.62800WfxvH9" displaytext="Recuerde lo aprendido" expand="false" type="slide" />
+            <slidelink slideid="_player.6jj4zzpj7HA.5jwEO4t4fUH" displaytext="Navegue en la red" expand="false" type="slide" />
+            <slidelink slideid="_player.6jj4zzpj7HA.5uel1IoEXeD" displaytext="Autoevaluación" expand="false" type="slide" />
+          </links>
+        </slidelink>
+        <slidelink slideid="_player.6ix14m7j0j2.6B0lKbCIYSE" displaytext="13. Electrostática" expand="false" type="slide">
+          <links>
+            <slidelink slideid="_player.6ix14m7j0j2.64woXaosSHM" displaytext="Para comenzar" expand="false" type="slide" />
+            <slidelink slideid="_player.6ix14m7j0j2.6EHM6db8E1v" displaytext="El mundo de la física" expand="false" type="slide" />
+            <slidelink slideid="_player.6ix14m7j0j2.5xve1XYGhqf" displaytext="Recuerde lo aprendido" expand="false" type="slide" />
+            <slidelink slideid="_player.6ix14m7j0j2.6GZG7ya0Yr8" displaytext="Navegue en la red" expand="false" type="slide" />
+            <slidelink slideid="_player.6ix14m7j0j2.5VtWQIkeZ6r" displaytext="Autoevaluación" expand="false" type="slide" />
+          </links>
+        </slidelink>
+        <slidelink slideid="_player.6PL48g75Wf7.6ImUZQg6fkU" displaytext="14. Corriente eléctrica " expand="false" type="slide">
+          <links>
+            <slidelink slideid="_player.6PL48g75Wf7.6VmL9gfQZAr" displaytext="Para comenzar" expand="false" type="slide" />
+            <slidelink slideid="_player.6PL48g75Wf7.6MmFdkWfaYR" displaytext="El mundo de la física" expand="false" type="slide" />
+            <slidelink slideid="_player.6PL48g75Wf7.6DgjZ1FxaD4" displaytext="Recuerde lo aprendido" expand="false" type="slide" />
+            <slidelink slideid="_player.6PL48g75Wf7.5ZZ3CuKBQVX" displaytext="Navegue en la red" expand="false" type="slide" />
+            <slidelink slideid="_player.6PL48g75Wf7.6QB0zUCUJPZ" displaytext="Autoevaluación" expand="false" type="slide" />
+          </links>
+        </slidelink>
+        <slidelink slideid="_player.63sypOt1tUF.5afYgPekVF6" displaytext="15. Electromagnetismo" expand="false" type="slide">
+          <links>
+            <slidelink slideid="_player.63sypOt1tUF.657lYXRLnQo" displaytext="Para comenzar" expand="false" type="slide" />
+            <slidelink slideid="_player.63sypOt1tUF.6j5fokMhQ9t" displaytext="El mundo de la física" expand="false" type="slide" />
+            <slidelink slideid="_player.63sypOt1tUF.6XzohL9ZKMR" displaytext="Recuerde lo aprendido" expand="false" type="slide" />
+            <slidelink slideid="_player.63sypOt1tUF.6avoS1Iv5YV" displaytext="Navegue en la red" expand="false" type="slide" />
+            <slidelink slideid="_player.63sypOt1tUF.6DAhHJ4a1mQ" displaytext="Autoevaluación" expand="false" type="slide" />
+          </links>
+        </slidelink>
+        <slidelink slideid="_player.5n66jyzsuKM.6IO7bbEJ05i" displaytext="16. Inducción electromagnética" expand="false" type="slide">
+          <links>
+            <slidelink slideid="_player.5n66jyzsuKM.5ymJZUTgxAc" displaytext="Para comenzar" expand="false" type="slide" />
+            <slidelink slideid="_player.5n66jyzsuKM.5ghbJtZqdmq" displaytext="El mundo de la física" expand="false" type="slide" />
+            <slidelink slideid="_player.5n66jyzsuKM.6XKkNn2w70w" displaytext="Recuerde lo aprendido" expand="false" type="slide" />
+            <slidelink slideid="_player.5n66jyzsuKM.6lqtebn1jP8" displaytext="Navegue en la red" expand="false" type="slide" />
+            <slidelink slideid="_player.5n66jyzsuKM.6qT4eXeaZlt" displaytext="Autoevaluación" expand="false" type="slide" />
+          </links>
+        </slidelink>
+        <slidelink slideid="_player.5mSndRndWx2.61r1cLbdECL" displaytext="17. Repaso: semanas 9 a 16" expand="false" type="slide">
+          <links>
+            <slidelink slideid="_player.5mSndRndWx2.67KePSyr5FQ" displaytext="Para comenzar" expand="false" type="slide" />
+            <slidelink slideid="_player.5mSndRndWx2.68OeH6LhFIW" displaytext="El mundo de la física" expand="false" type="slide" />
+            <slidelink slideid="_player.5mSndRndWx2.60fs6R4kb8T" displaytext="Recuerde lo aprendido" expand="false" type="slide" />
+            <slidelink slideid="_player.5mSndRndWx2.6fTkb3R91oS" displaytext="Navegue en la red" expand="false" type="slide" />
+            <slidelink slideid="_player.5mSndRndWx2.6JqClKGshvI" displaytext="Autoevaluación" expand="false" type="slide" />
+          </links>
+        </slidelink>
+      </links>
+    </outline>
+  </nav_data>
+  <resource_data description="" />
+  <transcript_data />
+  <glossary_data>
+    <terms>
+      <term title="aceptor">molécula o compuesto que acepta electrones en su estructura química.</term>
+      <term title="acetil coenzima A">molécula formada por una molécula de coenzima A y un grupo acetil, que interviene en numerosos procesos metabólicos celulares.</term>
+      <term title="ácido graso">biomolécula formada por una cadena larga lineal de carbono e hidrógeno, con un grupo carboxilo (–COOH) en su extremo.</term>
+      <term title="ADN (ácido desoxirribonucléico)">molécula formada por ácidos nucleicos, con forma de doble hélice, que es capaz de replicarse. Contiene a los genes.</term>
+      <term title="amiloplasto">tipo de plastidio que almacena almidón.</term>
+      <term title="análisis cuantitativo">es el análisis de datos en cantidades.</term>
+      <term title="animal filtrador">animal que filtra el agua para recoger pequeños organismos, que son su alimento. Por ejemplo: las ballenas y esponjas.</term>
+      <term title="apéndices">estructura que crece y se extiende desde el cuerpo del animal. Por ejemplo: las patas y las antenas.</term>
+      <term title="apnea del sueño">interrupción de la respiración al estar durmiendo.</term>
+      <term title="ATP">trifosfato de adenosina. Molécula con alta carga de energía, formada por una azúcar de 5 carbonos, una base nitrogenada y una cadena de tres grupos de fosfatos.</term>
+      <term title="autofertilización">tipo de reproducción sexual que ocurre cuando las células sexuales masculinas fertilizan a las células sexuales femeninas, siendo ambas de un mismo organismo.</term>
+      <term title="Beriberi">enfermedad causada por la deficiencia de tiamina, que causa: indisposición, cansancio, edema, dolor de pecho, palpitaciones, dificultad para respirar, entre otros.</term>
+      <term title="biocombustible">combustible de origen biológico (como restos orgánicos).</term>
+      <term title="biomaterial">sustancia que ha sido desarrollada a través de la ingeniería, para interactuar con sistemas vivos (como tejidos) y que es utilizada para fines médicos (terapéuticos o diagnóstico).</term>
+      <term title="calentamiento global">es el aumento de la temperatura de la Tierra por los crecientes niveles de gases de efecto invernadero.</term>
+      <term title="cambio climático">cambio a largo plazo en el clima de la Tierra.</term>
+      <term title="catalizar">acelerar. Un catalizador es un agente químico que acelera una reacción, sin ser parte de los reactivos o de los productos de la reacción.</term>
+      <term title="células madre">células que tienen la capacidad o potencial para transformarse en diferentes tipos de células especializadas.</term>
+      <term title="centrifugado">método utilizado para separar líquidos de sólidos.</term>
+      <term title="centrosoma">estructura que se encuentra en el citoplasma de las células animales, carece de membrana y está formado por dos centriolos y proteínas. En él se organizan los microtúbulos que formarán el huso acromático durante la división celular.</term>
+      <term title="cigoto">óvulo fertilizado. Célula diploide producida por la unión de gametos haploides (óvulos y espermatozoides) durante la fertilización.</term>
+      <term title="cimarrón">es cualquier animal domesticado que escapa de sus amos.</term>
+      <term title="citocromo">tipo de proteína que ayuda al transporte de energía en las células.</term>
+      <term title="clorofila P 680">tipo de clorofila que es absorbida a una longitud de onda de 680 nanómetros (nm).</term>
+      <term title="clorofila P 700">tipo de clorofila que es absorbida a una longitud de onda de 700 nanómetros (nm).</term>
+      <term title="cloroplasto">tipo de plastidio que contiene un pigmento verde llamado clorofila, responsable de la fotosíntesis.</term>
+      <term title="coenzima">pequeña molécula orgánica, que no está formada por proteínas, cuya función es transportar grupos químicos entre enzimas para su funcionamiento adecuado.</term>
+      <term title="cognitivo">todo lo relacionado al conocimiento y procesos mentales como la memoria, el lenguaje.</term>
+      <term title="criptorquidia">es un trastorno del desarrollo en los mamíferos que consiste en el descenso incompleto de uno o ambos testículos a través del canal inguinal hacia el escroto.</term>
+      <term title="cromátida hermana">las cromátidas hermanas son dos copias de un mismo cromosoma.</term>
+      <term title="cromatina">conjunto de ADN y proteínas.</term>
+      <term title="cromoplasto">tipo de plastidio que le brinda color a flores y frutos.</term>
+      <term title="cromosoma">1. estructura que contiene toda la información genética de un ser vivo. 2. estructura que contiene el ADN, y que se encuentra dentro del núcleo de una célula.</term>
+      <term title="degradar">reducir una molécula orgánica a otras más sencillas.</term>
+      <term title="derecho inalienable">es considerado fundamental, no pueden ser legítimamente negados a una persona.</term>
+      <term title="desarrollo sostenible">es satisfacer las necesidades de las generaciones presentes sin comprometer las posibilidades de las generaciones del futuro para atender sus propias necesidades. (Comisión Brundtland. ONU).</term>
+      <term title="electroimán">tipo de imán que utiliza una corriente eléctrica para formar un campo magnético.</term>
+      <term title="endometrio">tejido que recubre el útero donde el embrión se implantará si ocurre la fecundación del óvulo. Como el embrión necesita oxígeno y nutrientes, el endometrio cuenta con un buen abastecimiento de sangre.</term>
+      <term title="enzima">macromolécula que actúa como catalizador.</term>
+      <term title="enzimas">sustancias (la mayoría proteicas) que aceleran las reacciones químicas. Por ejemplo: enzimas digestivas.</term>
+      <term title="estigma">parte final del pistilo de una flor, que recibe el polen durante la polinización.</term>
+      <term title="fenotipo mutante">variación debida a cambios o mutaciones en los alelos del fenotipo dominante.</term>
+      <term title="filial">proviene del latín y significa hijo.</term>
+      <term title="forma oxidada">que ha perdido electrones.</term>
+      <term title="forma reducida">que ha ganado electrones.</term>
+      <term title="fósil">cualquier evidencia que muestre la existencia de organismos de eras geológicas. Restos o huellas de organismos conservados en las rocas.</term>
+      <term title="fotosistema I">centro de reacción dentro de los cloroplastos que contiene un aceptor primario de electrones y dos moléculas de clorofila P 700.</term>
+      <term title="fotosistema II">centro de reacción dentro de los cloroplastos que contiene un aceptor primario de electrones y dos moléculas de clorofila P 680. </term>
+      <term title="gen">unidad básica de la herencia, que consiste en un fragmento específico de ADN.</term>
+      <term title="genoma">material genético de un organismo.</term>
+      <term title="gradiente de concentración">diferencia entre la concentración de iones en ambos lados de la membrana celular.</term>
+      <term title="haz electrónico">rayo de luz producido por electrones, que forman una imagen a través de un dispositivo.</term>
+      <term title="humedal">zona de la superficie terrestre que esta temporal o permanentemente inundada.</term>
+      <term title="lipoproteína">complejo formado por moléculas de proteínas y lípidos que transportan grasas en todo el cuerpo.</term>
+      <term title="liquen">es un organismo formado por la simbiosis de un hongo y un alga.</term>
+      <term title="líquido amniótico">líquido contenido en el saco amniótico, que protege al feto y permite su movimiento.</term>
+      <term title="médula ósea">tipo de tejido que se encuentra en el interior de algunos huesos del cuerpo, como los huesos largos y las vértebras.</term>
+      <term title="metanfetamina">es un psicoestimulante que afecta el sistema nervios y es adictivo. Produce problemas cardiovasculares.</term>
+      <term title="nanobot">máquina o robot de tamaño nanométrico.</term>
+      <term title="nanochip">circuito integrado de tamaño nanométrico.</term>
+      <term title="nanopartícula">partícula que mide 100 nanómetros (0.1 milésimas de milímetro) o menos.</term>
+      <term title="nanosensor">sensor de tamaño nanométrico.</term>
+      <term title="nanotransportador">vehículo o transporte de tamaño nanométrico.</term>
+      <term title="nivel trófico">cada uno de los conjuntos de organismos de un ecosistema que coinciden por la posición que ocupan en el flujo de energía y nutrientes, es decir, a los que ocupan un lugar equivalente en la cadena alimenticia.</term>
+      <term title="oligoelemento">bioelemento que se encuentra en pequeñas cantidades en los seres vivos. Por ejemplo: hierro, cromo, boro, níquel, zinc, etc.</term>
+      <term title="ovocito">célula germinal femenina que está en proceso de convertirse en un óvulo maduro.</term>
+      <term title="oxidación">proceso mediante el cual una sustancia pierde electrones y los transfiere hacia otra sustancia que acepta electrones (aceptor).</term>
+      <term title="peso molecular">es la suma de los pesos atómicos de los elementos que conforman un compuesto químico.</term>
+      <term title="polímero">macromoléculas formadas por la unión de moléculas más pequeñas, llamadas monómeros, a través de enlaces químicos. Un monómero es una molécula con masa molecular pequeña.</term>
+      <term title="polinización cruzada">es la transferencia de polen entre diferentes plantas.</term>
+      <term title="saco amniótico">membranas que protegen al embrión y contienen un líquido, llamado líquido amniótico.</term>
+      <term title="sinapsis">conexión entre dos cromosomas homólogos duplicados que se entrecruzan entre sí, que ocurre durante la profase I de la meiosis.</term>
+      <term title="sistemático">organizado, riguroso, ordenado.</term>
+      <term title="soluto">sustancia que está disuelta en otra sustancia llamada solvente (como el agua).</term>
+      <term title="sustentable">significa que la satisfacción de necesidades humanas, está sujeta a la conservación de los recursos naturales y la protección del medio ambiente.</term>
+      <term title="tecnología">conjunto de conocimientos, instrumentos o recursos unidos a través de procedimientos prácticos y científicos, que permiten crear bienes y servicios para satisfacer las necesidades básicas como alimentación, vivienda, relaciones sociales y con el medio ambiente; y otros aspectos como deportes, entretenimiento y música de los seres humanos.</term>
+      <term title="termodinámica">rama de la física que estudia las relaciones entre la energía y los cambios físicos de origen térmico (calor), que ocurren entre los sistemas y los fenómenos mecánicos y químicos.</term>
+      <term title="tétrada">conjunto de cuatro cromátidas (de dos cromosomas homólogos).</term>
+      <term title="totipotencialidad">capacidad de una célula, de dar origen a diferentes tipos de células.</term>
+      <term title="transgénico">organismo que contiene material genético de otro organismo en sus genes.</term>
+      <term title="trilobites">es una clase de artrópodos extintos de la era Paleozoica.</term>
+    </terms>
+  </glossary_data>
+</bwFrame>
