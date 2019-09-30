@@ -6,6 +6,7 @@ class Student(models.Model):
     grado = models.IntegerField()
     semestre = models.IntegerField()
     circulo = models.ForeignKey('Circle', models.SET_NULL, blank=True, null=True)
+    ingreso = models.IntegerField()
     # def __str__(self):
     #     return self.carnet
     def get_name(self):
