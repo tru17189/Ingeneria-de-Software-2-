@@ -15,25 +15,31 @@ class Student(models.Model):
         return self.grado
     def get_semester(self):
         return self.semestre
+    def get_ingreso(self):
+        return self.ingreso
 
 class ListaDepartamento(models.Model):
     coordinacion = models.CharField(max_length=2)
     departamento = models.CharField(max_length=30, primary_key=True)
+    ingreso = models.IntegerField()
     def get_departamento(self):
         return self.departamento
-
     def get_coordinacion(self):
         return self.coordinacion
+    def get_ingreso(self):
+        return self.ingreso
 
 class Circle(models.Model):
     codigo_circulo = models.CharField(max_length=20, primary_key=True)
     coordinacion = models.ForeignKey('ListaDepartamento', models.CASCADE)
+    ingreso = models.IntegerField()
 
     def get_circle_code(self):
         return self.codigo_circulo
-
     def get_name_coor(self):
         return self.coordinacion
+    def get_ingreso(self):
+        return self.ingreso
 
     #def __str__(self):
         #return self.id_coor + self.num_x + self.circle_number

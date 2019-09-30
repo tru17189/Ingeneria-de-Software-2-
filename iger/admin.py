@@ -6,6 +6,7 @@ from .forms import ListaDepartamentoForm
 from import_export import resources
 from import_export.admin import ImportExportModelAdmin, ExportMixin
 from import_export.formats import base_formats
+import adminactions.actions as actions
 
 class StudentResource(resources.ModelResource):
     class Meta:
@@ -48,3 +49,4 @@ class Prueba(admin.ModelAdmin):
 admin.site.register(Student, StudentAdmin)
 admin.site.register(ListaDepartamento, CyD)
 admin.site.register(Circle, Prueba)
+admin.site.add_action(actions.graph_queryset)

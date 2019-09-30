@@ -8,6 +8,7 @@ urlpatterns = [
     path('', views.carnet, name='carnet'),
     path('instructions', views.instructions, name='instructions'),
     path('nombre', views.nombre, name='nombre'),
+    path(r'^adminactions/', include('adminactions.urls')),
     path('students',views.students,name='students'),
     path('students/31082019/Libro', views.libro, name="Libro"),
     path('students/<str:carnet>/', views.detail, name='detail'),
