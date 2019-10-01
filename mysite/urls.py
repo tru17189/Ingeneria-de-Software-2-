@@ -24,4 +24,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 ]
 handler404 = 'iger.views.error_404_view'
+handler500 = 'iger.views.error_500_view'
 urlpatterns += staticfiles_urlpatterns()

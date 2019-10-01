@@ -44,6 +44,10 @@ def students(request):
 
 def error_404_view(request, exception):
     return render(request, 'iger/404.html', status=404)
+
+def error_500_view(request):
+    data ={}
+    return render(request, 'iger/404.html', data)
     
 def detail(request, carnet):
     try:
