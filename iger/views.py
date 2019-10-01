@@ -27,6 +27,9 @@ def libro_Ingles1(request):
 	
 def libro_Fisica1(request):
     return render(request, 'iger/Libros/visualizadores/libroFisica.html')
+	
+def libro_FisicaHTML(request):
+    return render(request, '../../booksIger/Fisica4to/story.html')
 
 def nombre(request):
     return render(request, 'iger/nombre.html')
@@ -44,14 +47,10 @@ def error_404_view(request, exception):
     
 def detail(request, carnet):
     try:
-        student = Student.objects.get(carnet=carnet)
-        student.ingreso = student.ingreso + 1
-        student.save()         
+        student = Student.objects.get(carnet=carnet)         
     except Student.DoesNotExist:
         try:
-            student = Student.objects.get(nombre_completo=carnet)
-            student.ingreso = student.ingreso + 1
-            student.save()     
+            student = Student.objects.get(nombre_completo=nombre_completo)
         except Student.DoesNotExist:
             raise Http500("El alumno no existe, ingrese nuevamente sus credenciales")
     
