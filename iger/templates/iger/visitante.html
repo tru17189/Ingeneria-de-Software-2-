@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+    <html>
+    
+	<head>
+        
+		<meta name="viewport" content="width=device−width, initial−scale=1.0" />
+        
+		<style>
+		
+		body{
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: #FFFFFF;
+            font-size: 32px;
+		}
+		
+		h3{
+			color:rgba(250,146,0,1);
+		}
+		
+		ul {
+			margin-top:-1%;
+			margin-left:-1%;
+			position:fixed;
+			list-style-type: none;
+			width:100%;
+			overflow: hidden;
+			background-color: rgba(250,146,0,1);
+			box-shadow: 0px 4px 2px -4px gray;
+		}
+
+		li {
+			float: left;
+		}
+
+		li a {
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+
+		li a:hover {
+			background-color: #F75E25;
+		}
+		
+		.stuff-container{
+			margin-left:-1%;
+			margin-right:-0.6%;
+			display: grid;
+			grid-template-columns: 50% 50%;
+            grid-row-gap: 0%; 
+			grid-column-gap: 0%;
+		}
+		
+		.container-highlighted{
+			padding-left:20%;
+		}
+		
+		.imageHighlighted {
+			opacity: 1;
+			display: block;
+			height: auto;
+			transition: .5s ease;
+			backface-visibility: hidden;
+		}
+		
+		.middleHighlighted {
+			transition: .5s ease;
+			opacity: 0;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			-ms-transform: translate(-50%, -50%);text-align: center;
+		}
+		
+		div#d + container-highlighted{
+			margin-left:12%;
+		}
+
+		div#titulo + container-highlighted{
+			padding-left:5%;
+		}
+
+		.container-highlighted:hover .imageHighlighted {
+			opacity: 0.9;
+		}
+
+		.container-highlighted:hover .middleHighlighted {
+			opacity: 1;
+		}
+		
+		.information-container{
+			padding-left:10%;
+			padding-right:10%;
+		}
+		
+		.iamge-container{
+			
+		}
+		
+		p{
+			text-align: justify;
+		}
+			
+		</style>
+	
+	
+		{% load static from staticfiles%}
+		
+	</head>
+	
+	<body>
+		
+		<!--header-->
+		<ul>
+			<li><a class="active" href="#home">Inicio</a></li>
+			<li><a href="https://www.iger.edu.gt/">Pagina oficial</a></li>
+			<li><a href="https://iger.edu.gt/content/inscripciones#block-quicktabs-proceso-de-inscripci-n">Inscripción</a></li>
+			<li><a href="https://www.iger.edu.gt/content/preguntas-frecuentes">Preguntas frecuentes</a></li>
+		</ul>
+		
+		<!--body-->	
+		<div class="stuff-container" style="padding-top:4%"	>
+		
+			<div class="container-highlighted" id="d">
+				<figure>
+					<img src="{%static 'logo_iger.png' %}" class="imageHighlighted" alt="Logotipo Iger" width="256" height="261">
+					<div class="middleHighlighted">
+					</div>
+				</figure> 
+			</div>
+		
+			<div class="information-container" style="background-color:#F4F4F4;">
+				<h3>¿Quienes somos?</h3>
+				<p style="font-size: 24px;">Somos una institución educativa que apoya el desarrollo de Guatemala mediante la educación a distancia por medio de la radio y el internet.</p>
+			</div>
+			
+			<div class="information-container" style="background-color:#F4F4F4;">
+				<h3>Nuestra misión</h3>
+				<p style="font-size: 24px;">Ser una institución autorizada por el Ministerio de Educación que contribuye al desarrollo social y humano de las comunidades de Guatemala mediante programas de educación a distancia accesibles a jóvenes y adultos de escasos recursos.</p>
+			</div>
+			
+			<div>
+				<img src="{%static 'IGER_Taller.png' %}" alt="IGER_Taller" style="width:100%;height:120%;">
+			</div>
+			
+			<div>
+				<img src="{%static 'libro1.png' %}" alt="libro1" style="width:100%;height:100%;">
+			</div>
+			
+			<div class="information-container" style="background-color:#F4F4F4;">
+				<h3>Ventajas al usar esta app</h3>
+				<p style="font-size: 24px;">Para la comodidad de todos los alumnos hemos desarrollado una nueva plataforma en la cual les sea posible visualizar sus libros y descargarlos, todo esto en un solo lugar y al alcance de un solo click.</p>
+			</div>
+			
+			<div class="information-container" style="background-color:#F4F4F4;">
+				<h3>Libros interactivos</h3>
+				<p style="font-size: 24px;">IGER ha explorado nuevas técnicas para estar siempre a la vanguardia y darle educación de calidad a sus estudiantes. Debido a esto ha creado libros interactivos con los cuales los alumnos podrán familiarizarse con nuevas herramientas y aprender al mismo tiempo.</p>
+			</div>
+			
+			<div>
+				<img src="{%static 'libro2.png' %}" alt="libro2" style="width:100%;height:100%;">
+			</div>
+			
+		</div>
+			
+			
+			
+		
+	</body>
+	
+	<script>
+        
+	</script>
+
+</html>
