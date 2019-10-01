@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+    </head>
+
+    <body>
+        <script>
+            
+        </script>
+        <div class="bloque">
+            <h1>La página que ha buscado no existe </h1>
+            <p class="texto" >Presione el botón de abajo para regresar a la página de inicio.
+            </p>
+
+            <button class="button" type="submit"  align-content="right" id="mandar"  onclick="location.href='{% url 'carnet'%}'">Inicio</button>
+            
+            
+        </div>
+    </body>
+    <style>
+
+           
+
+            h1{
+                position: relative;
+                top: 70px;
+                font-weight: bold;
+                font-size: 52px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+
+            body {
+                background: linear-gradient(90deg, #F5C236, #EB7D33);
+                text-align: center;
+                font-family: 'Segoe UI', Tahoma;
+                color: #111E6C;
+            }
+
+            p{
+                font-size: 25px;
+                text-align: center;
+            }
+
+            .bloque {
+                background: white;
+                height: 500px;
+                width: 80%;
+                border-radius: 70px 70px 70px 70px;
+                text-align: center;
+                align-content: center;
+                margin: 0 auto;
+                position: relative;
+                top: 30px;
+                
+            }
+
+            .button {
+                background-color: #1779b9;
+                border-radius: 20px;
+                border: none;
+                color: white;
+                width: 254px;
+                height: 70px;
+                padding: 10px 20px;
+                text-align: center;
+                display: inline-block;
+                font-size: 22px;
+                cursor: pointer;
+                top: 80%;
+                font-family: 'Segoe UI';
+                margin-top: 5%;
+                
+            }
+
+            li{
+                font-size: 25px;
+                text-align: left;
+            }
+
+            .texto{
+                padding-top: 120px;
+                text-align: center;
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+
+
+        </style>
+
+</html>

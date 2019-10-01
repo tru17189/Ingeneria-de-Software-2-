@@ -17,10 +17,11 @@ from django.contrib import admin
 from django.urls import include, path
 from django.views.generic.base import TemplateView
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+from django.conf.urls import handler404
 urlpatterns = [
     path('', include('iger.urls')),
     path('home/',TemplateView.as_view(template_name='home.html'), name = 'home'),
     path('admin/', admin.site.urls),
 ]
-
+handler404 = 'iger.views.error_404_view'
 urlpatterns += staticfiles_urlpatterns()

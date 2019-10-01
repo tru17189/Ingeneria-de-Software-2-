@@ -39,7 +39,9 @@ def students(request):
     context = {'carnet_list': carnet_list}
     return render(request, 'iger/students.html', context)
 
-
+def error_404_view(request, exception):
+    return render(request, 'iger/404.html', status=404)
+    
 def detail(request, carnet):
     try:
         student = Student.objects.get(carnet=carnet)
