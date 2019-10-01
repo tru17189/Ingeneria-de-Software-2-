@@ -42,10 +42,14 @@ def students(request):
 
 def detail(request, carnet):
     try:
-        student = Student.objects.get(carnet=carnet)         
+        student = Student.objects.get(carnet=carnet)
+        student.ingreso = student.ingreso + 1
+        student.save()         
     except Student.DoesNotExist:
         try:
-            student = Student.objects.get(nombre_completo=nombre_completo)
+            student = Student.objects.get(nombre_completo=carnet)
+            student.ingreso = student.ingreso + 1
+            student.save()     
         except Student.DoesNotExist:
             raise Http500("El alumno no existe, ingrese nuevamente sus credenciales")
     
