@@ -14,12 +14,10 @@ class StudentResource(resources.ModelResource):
         import_id_fields = ['carnet']
 
 class StudentAdmin(ImportExportModelAdmin, ExportMixin, admin.ModelAdmin):
-    list_display = ('carnet', 'nombre_completo', 'grado', 'semestre', 'circulo', 'ingreso')
+    list_display = ('carnet', 'nombre_completo', 'grado', 'semestre', 'circulo')
     list_filter = ('grado', 'semestre', 'circulo')
     def get_import_formats(self):
-            """
-            Returns available export formats.
-            """
+          
             formats = (
                   base_formats.CSV,
                   base_formats.XLS,

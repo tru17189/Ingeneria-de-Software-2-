@@ -6,7 +6,6 @@ class Student(models.Model):
     grado = models.IntegerField()
     semestre = models.IntegerField()
     circulo = models.ForeignKey('Circle', models.SET_NULL, blank=True, null=True)
-    ingreso = models.IntegerField()
     # def __str__(self):
     #     return self.carnet
     def get_name(self):
@@ -21,7 +20,6 @@ class Student(models.Model):
 class ListaDepartamento(models.Model):
     coordinacion = models.CharField(max_length=2)
     departamento = models.CharField(max_length=30, primary_key=True)
-    ingreso = models.IntegerField()
     def get_departamento(self):
         return self.departamento
     def get_coordinacion(self):
@@ -32,7 +30,6 @@ class ListaDepartamento(models.Model):
 class Circle(models.Model):
     codigo_circulo = models.CharField(max_length=20, primary_key=True)
     coordinacion = models.ForeignKey('ListaDepartamento', models.CASCADE)
-    ingreso = models.IntegerField()
 
     def get_circle_code(self):
         return self.codigo_circulo
