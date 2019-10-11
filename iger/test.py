@@ -3,6 +3,9 @@ from .models import Student
 from .models import ListaDepartamento
 from .models import Circle
 
+from .views import libro_mate
+
+
 # Create your tests here.
 
 class StudentTestCase(TestCase):
@@ -36,10 +39,3 @@ class createCircleTestCase(TestCase):
        self.assertEqual(pruebaCirculo.codigo_circulo, '010203')
        self.assertEqual(pruebaCirculo.coordinacion, depa)
 
-
-
-
-
-        
-        
-        

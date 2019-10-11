@@ -18,8 +18,8 @@ class Student(models.Model):
         return self.ingreso
 
 class ListaDepartamento(models.Model):
-    coordinacion = models.CharField(max_length=2)
-    departamento = models.CharField(max_length=30, primary_key=True)
+    coordinacion = models.CharField(max_length=2, primary_key=True)
+    departamento = models.CharField(max_length=30)
     def get_departamento(self):
         return self.departamento
     def get_coordinacion(self):
