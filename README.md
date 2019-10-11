@@ -41,10 +41,15 @@ Esto inicializara la aplicación en el localhost de la computadora, se puede abr
 
 ## Tests
 
+Para verificar las pruebas unitarias se puede correr el siguiente comando: 
+```
+python manage.py test
+```
 
-## Deployment
-
-
+En cuanto a pruebas BDD se necesita de un chromedriver, al tener eso correr el siguiente comando
+```
+python manage.py feature
+```
 
 ## Built With
 
@@ -53,10 +58,10 @@ Esto inicializara la aplicación en el localhost de la computadora, se puede abr
 
 ## Authors
 
-* **María Fernanda López** - [PurpleBooth](https://github.com/PurpleBooth)
-* **Miguel Valle** - [PurpleBooth](https://github.com/PurpleBooth)
-* **Antonio Reyes** - [PurpleBooth](https://github.com/PurpleBooth)
-* **Raúl Mónzon** - [PurpleBooth](https://github.com/PurpleBooth)
-* **Alexander Trujillo** - [PurpleBooth](https://github.com/PurpleBooth)
+* **María Fernanda López** - [Mafer](https://github.com/diazMafer)
+* **Miguel Valle** - [Mikki](https://github.com/PurpleBooth)
+* **Antonio Reyes** - [Tony](https://github.com/PurpleBooth)
+* **Raúl Mónzon** - [Raul](https://github.com/PurpleBooth)
+* **Alexander Trujillo** - [Alex](https://github.com/PurpleBooth)
 
 
