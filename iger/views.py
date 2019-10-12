@@ -11,6 +11,9 @@ def index(request):
 def instructions(request):
     return render(request, 'iger/instructions.html')
 
+def visitante(request):
+    return render(request, 'iger/visitante.html')
+
 def carnet(request):
     return render(request, 'iger/carnet.html')
 
