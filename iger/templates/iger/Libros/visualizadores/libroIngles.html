@@ -4,7 +4,16 @@
         <style>
             
         </style>
-        <body style="background-color:#111E6C;">
-            <iframe src="{% static '/story.html' %}" height="700" width="90%" align="middle"></iframe>
+        <body style="background-color:rgba(250,146,0,1);">
+            <div>
+                <iframe src="{% static '/story.html' %}"  width="99%" height="585 px" align="middle"></iframe>
+            </div>
+            <input class="button" type="submit" id="Regresar" onclick="doFunction()">Regresar</input>
         </body>
+
+        <script>
+            function doFunction(){
+                window.location.href = "students/"+document.getElementById("carnet").value; 
+            }
+        </script>
     </html>
