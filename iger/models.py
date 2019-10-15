@@ -1,5 +1,7 @@
 from django.db import models
-
+#Clase modelo para almacenar los datos de los estudiantes en la base de datos
+#El modelo tiene los siguientes atributos del estudiante:
+#carnet,nombre_completo,grado,semestre,circulo
 class Student(models.Model):
     carnet = models.CharField(max_length=15, primary_key=True)
     nombre_completo = models.CharField(max_length=35)
@@ -16,7 +18,9 @@ class Student(models.Model):
         return self.semestre
     def get_ingreso(self):
         return self.ingreso
-
+#Clase modelo para almacenar los datos de los departamentos siguiendo el formato dado por IGER
+#El modelo tiene los siguientes atributos del departamento:
+#coordinacion(codigo),departamento(codigo)
 class ListaDepartamento(models.Model):
     coordinacion = models.CharField(max_length=2, primary_key=True)
     departamento = models.CharField(max_length=30)
@@ -26,7 +30,9 @@ class ListaDepartamento(models.Model):
         return self.coordinacion
     def get_ingreso(self):
         return self.ingreso
-
+#Clase modelo para almacenar los datos de los circulos de estudio siguiendo el formato dado por IGER
+#El modelo tiene los siguientes atributos del departamento:
+#codigo_circulo,coordinacion(codigo)
 class Circle(models.Model):
     codigo_circulo = models.CharField(max_length=20, primary_key=True)
     coordinacion = models.ForeignKey('ListaDepartamento', models.CASCADE)
