@@ -5,6 +5,12 @@ class UserDefinedTask(TaskSet):
     def home(self):
         self.client.get("/students/31082019/")
 
+    @task(2)
+    def home(self):
+        self.client.get("/students/31082019/")
+
+
+
 class User(HttpLocust):
     task_set = UserDefinedTask
     min_wait = 1000
