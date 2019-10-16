@@ -16,8 +16,7 @@ class Student(models.Model):
         return self.grado
     def get_semester(self):
         return self.semestre
-    def get_ingreso(self):
-        return self.ingreso
+    
 #Clase modelo para almacenar los datos de los departamentos siguiendo el formato dado por IGER
 #El modelo tiene los siguientes atributos del departamento:
 #coordinacion(codigo),departamento(codigo)
@@ -28,8 +27,7 @@ class ListaDepartamento(models.Model):
         return self.departamento
     def get_coordinacion(self):
         return self.coordinacion
-    def get_ingreso(self):
-        return self.ingreso
+    
 #Clase modelo para almacenar los datos de los circulos de estudio siguiendo el formato dado por IGER
 #El modelo tiene los siguientes atributos del departamento:
 #codigo_circulo,coordinacion(codigo)
@@ -41,8 +39,7 @@ class Circle(models.Model):
         return self.codigo_circulo
     def get_name_coor(self):
         return self.coordinacion
-    def get_ingreso(self):
-        return self.ingreso
+    
 
     #def __str__(self):
         #return self.id_coor + self.num_x + self.circle_number

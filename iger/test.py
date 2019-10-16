@@ -16,7 +16,7 @@ from .views import libro_mate
 class StudentTestCase(TestCase):
     def test_get_student(self):
         ListaDepartamento.objects.create(coordinacion = "02", departamento="Guatemala 2")
-        depa = ListaDepartamento.objects.get(pk="Guatemala 2")
+        depa = ListaDepartamento.objects.get(pk="02")
         Circle.objects.create(codigo_circulo="010203", coordinacion=depa)
         circulo = Circle.objects.get(pk="010203")
         Student.objects.create(carnet="101", nombre_completo="John Doe",grado=1,semestre=2, circulo=circulo)
@@ -32,7 +32,7 @@ class StudentTestCase(TestCase):
 class ListaDepartamentoTestCase(TestCase):
     def test_get_ListaDepartamento(self):
         ListaDepartamento.objects.create(coordinacion = "02", departamento="Guatemala 2")
-        pruebaDepartamento = ListaDepartamento.objects.get(pk="Guatemala 2")
+        pruebaDepartamento = ListaDepartamento.objects.get(pk="02")
         self.assertEqual(pruebaDepartamento.coordinacion, '02')
         self.assertEqual(pruebaDepartamento.departamento, 'Guatemala 2')
 
@@ -41,7 +41,7 @@ class ListaDepartamentoTestCase(TestCase):
 class createCircleTestCase(TestCase):
    def test_get_createCircle(self):
        ListaDepartamento.objects.create(coordinacion = "02", departamento="Guatemala 2")
-       depa = ListaDepartamento.objects.get(pk="Guatemala 2")
+       depa = ListaDepartamento.objects.get(pk="02")
        Circle.objects.create(codigo_circulo="010203", coordinacion=depa)
        pruebaCirculo = Circle.objects.get(pk="010203")
        self.assertEqual(pruebaCirculo.codigo_circulo, '010203')
