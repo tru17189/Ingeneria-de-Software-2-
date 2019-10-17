@@ -7,7 +7,11 @@ class UserDefinedTask(TaskSet):
 
     @task(2)
     def home(self):
-        self.client.get("/students/31082019/")
+        self.client.get("/students/31082019/libro_mate")
+
+    @task(3)
+    def home(self):
+        self.client.get("/students/31082019/libro_mate")
 
 
 
