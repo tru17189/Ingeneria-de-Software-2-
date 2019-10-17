@@ -1,6 +1,8 @@
 from django import forms
 from .models import ListaDepartamento
-
+#Clase que tiene la funcion de validar el ingreso de departamentos nuevos
+#verificando que el departamento ingresado si exista, buscandolo dentro de una lista
+#de los Departamentos que existen en Guatemala
 class ListaDepartamentoForm(forms.ModelForm):
     class Meta:
         model = ListaDepartamento

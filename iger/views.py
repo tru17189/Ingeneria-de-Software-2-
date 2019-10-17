@@ -3,6 +3,7 @@ from django.shortcuts import render_to_response
 from django.http import HttpResponse
 from .models import Student, Circle
 from django.http import Http404
+from django.http import HttpResponse
 
 def index(request):
     return render(request, 'iger/index.html')
@@ -12,6 +13,9 @@ def instructions(request):
 
 def carnet(request):
     return render(request, 'iger/carnet.html')
+
+def carnet2(request):
+    return render(request, 'iger/carnet2.html')
 
 def libro(request):
     return render_to_response('iger/Libros/English/story_html5.html')
@@ -57,6 +61,32 @@ def detail(request, carnet):
             student = Student.objects.get(nombre_completo=nombre_completo)
         except Student.DoesNotExist:
             raise Http500("El alumno no existe, ingrese nuevamente sus credenciales")
+    
+    if (student.grado == 4):
+        if(student.semestre == 1):
+            return render(request, 'iger/semester.html', {'student': student})
+        else:
+            return render(request, 'iger/Semester2.html', {'student': student})
+    else:
+        if(student.semestre == 1):
+            return render(request, 'iger/QuintoSemester.html', {'student': student})
+        else:
+            return render(request, 'iger/QuintoSemester2.html', {'student': student})
+
+def detail2(request):
+    carnet = ''
+    nombre_completo = ''
+    if request.method == 'POST':
+        carnet = request.POST['numero'] 
+        print(carnet)
+    try:
+        student = Student.objects.get(carnet=carnet)         
+    except Student.DoesNotExist:
+        try:
+            student = Student.objects.get(nombre_completo=nombre_completo)
+        except Student.DoesNotExist:
+            return render(request, 'iger/404.html') 
+            #return HttpResponse(status=500)
     
     if (student.grado == 4):
         if(student.semestre == 1):

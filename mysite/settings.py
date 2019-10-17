@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'zdkk2y#utcl1-28*mgnje+4vi=^7lz6w6aw7x!h+edm^1$m(*@'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
 
@@ -125,7 +125,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = '/static/'
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, "assets"), os.path.join(BASE_DIR, "booksIger"),
+    os.path.join(BASE_DIR, "assets"),
 )
 
 LOGIN_REDIRECT_URL = 'home'
