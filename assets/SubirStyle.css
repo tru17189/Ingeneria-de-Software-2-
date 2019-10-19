@@ -11,6 +11,15 @@ body {
     left: 1cm;
 }
 
+.down{
+    position: relative;
+    top: -12cm;
+    left: 15cm;
+    transform: rotate(90deg);
+    height: 200px;
+    width: 350px;
+}
+
 .tittleStyle {
     position: relative;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -30,16 +39,17 @@ body {
 
 .button1{
     position: relative;
-    left: 30cm;
-    top: -15cm;
+    left: 25cm;
+    top: -20cm;
     height: 2cm;
     width: 10cm;
 }
 
 .button2{
     position: relative;
-    left: 22cm;
-    top: -10cm;
+    background-color: white;
+    left: 9cm;
+    top: -6cm;
     height: 3cm;
     width: 3cm;
     border-radius: 100%;
