@@ -32,7 +32,7 @@ ALLOWED_HOSTS = ["*"]
 
 INSTALLED_APPS = [
     'iger.apps.IgerConfig',
-    'suit',
+    'django_humanize',    
     'import_export',
     'django.contrib.admin',
     'django.contrib.auth',

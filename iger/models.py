@@ -8,6 +8,7 @@ class Student(models.Model):
     grado = models.IntegerField()
     semestre = models.IntegerField()
     circulo = models.ForeignKey('Circle', models.SET_NULL, blank=True, null=True)
+    ingreso = models.IntegerField(default=0, editable=False)
     # def __str__(self):
     #     return self.carnet
     def get_name(self):
@@ -16,6 +17,10 @@ class Student(models.Model):
         return self.grado
     def get_semester(self):
         return self.semestre
+    def get_ingreso(self):
+        return self.ingreso
+
+
     
 #Clase modelo para almacenar los datos de los departamentos siguiendo el formato dado por IGER
 #El modelo tiene los siguientes atributos del departamento:
@@ -23,10 +28,14 @@ class Student(models.Model):
 class ListaDepartamento(models.Model):
     coordinacion = models.CharField(max_length=2, primary_key=True)
     departamento = models.CharField(max_length=30)
+    ingreso = models.IntegerField(default=0, editable=False)
+
     def get_departamento(self):
         return self.departamento
     def get_coordinacion(self):
         return self.coordinacion
+    def get_ingreso(self):
+        return self.ingreso
     
 #Clase modelo para almacenar los datos de los circulos de estudio siguiendo el formato dado por IGER
 #El modelo tiene los siguientes atributos del departamento:
@@ -34,12 +43,20 @@ class ListaDepartamento(models.Model):
 class Circle(models.Model):
     codigo_circulo = models.CharField(max_length=20, primary_key=True)
     coordinacion = models.ForeignKey('ListaDepartamento', models.CASCADE)
+    ingreso = models.IntegerField(default=0, editable=False)
 
     def get_circle_code(self):
         return self.codigo_circulo
     def get_name_coor(self):
         return self.coordinacion
-    
+    def get_ingreso(self):
+        return self.ingreso
+
+class CircleSummary(Circle):
+    class Meta:
+        proxy = True
+        verbose_name ='Ingreso circulo'
+        verbose_name_plural = 'Ingresos circulos'
 
     #def __str__(self):
         #return self.id_coor + self.num_x + self.circle_number

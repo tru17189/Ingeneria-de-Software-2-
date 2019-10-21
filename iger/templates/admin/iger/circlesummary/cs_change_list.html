@@ -1,0 +1,68 @@
+{% extends "admin/change_list.html" %}
+
+
+{% load humanizelib %}
+
+{% block content_title %}
+    <h1> Sales Summary </h1>
+{% endblock %}
+
+
+
+{% block result_list %}
+
+<div class="results">
+    <table>
+
+    <thead>
+      <tr>
+        <th>
+          <div class="text">
+            <a href="#">Circulo</a>
+          </div>
+        </th>
+        <th>
+          <div class="text">
+            <a href="#">Cantidad de ingresos</a>
+          </div>
+        </th>
+    
+        <th>
+          <div class="text">
+            <a href="#">
+              <strong>% del total de ingresos</strong>
+            </a>
+          </div>
+        </th>
+      </tr>
+    </thead>
+
+    <tbody>
+      {% for row in summary %}
+      <tr class="{% cycle 'row1' 'row2' %}">
+        <td> {{ row.codigo_circulo }} </td>
+        <td> {{ row.total | intcomma }} </td>
+        <td>
+            <strong>
+                {{ row.total_sales |
+                    percentof:summary_total.total_sales }}
+            </strong>
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+
+    <tr style="font-weight:bold; border-top:2px solid #DDDDDD;">
+        <td> Total </td>
+        <td> {{ summary_total.total | intcomma }} </td>
+        <td> 100% </td>
+    </tr>
+
+  </table>
+</div>
+
+<!-- ... -->
+
+{% endblock %}
+
+{% block pagination %}{% endblock %}

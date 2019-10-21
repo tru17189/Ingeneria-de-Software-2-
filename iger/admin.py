@@ -1,12 +1,21 @@
+# import json
+# from django.contrib import admin
+# from django.core.serializers.json import DjangoJSONEncoder
+# from django.db.models import Count
+# from django.db.models.functions import TruncDay
+# from django.http import JsonResponse
+# from django.urls import path
+
 from django.contrib import admin
 from .models import Student
 from .models import ListaDepartamento
-from .models import Circle
+from .models import Circle, CircleSummary
 from .forms import ListaDepartamentoForm
 from import_export import resources
 from import_export.admin import ImportExportModelAdmin, ExportMixin
 from import_export.formats import base_formats
 import adminactions.actions as actions
+from django.db.models import Count, Sum, Min, Max, DateTimeField
 
 class StudentResource(resources.ModelResource):
     class Meta:
@@ -24,7 +33,7 @@ class DptResource(resources.ModelResource):
         import_id_fields = ['coordinacion']
 
 class StudentAdmin(ImportExportModelAdmin, ExportMixin, admin.ModelAdmin):
-    list_display = ('carnet', 'nombre_completo', 'grado', 'semestre', 'circulo')
+    list_display = ('carnet', 'nombre_completo', 'grado', 'semestre', 'circulo', 'ingreso')
     list_filter = ('grado', 'semestre', 'circulo')
     def get_import_formats(self):
           
@@ -47,8 +56,8 @@ class StudentAdmin(ImportExportModelAdmin, ExportMixin, admin.ModelAdmin):
 
     resource_class = StudentResource
 
-class CyD(admin.ModelAdmin):
-    list_display = ( 'coordinacion' , 'departamento')
+class CyD(ImportExportModelAdmin, ExportMixin,admin.ModelAdmin):
+    list_display = ( 'coordinacion' , 'departamento', 'ingreso')
     form = ListaDepartamentoForm
     def get_import_formats(self):
             """
@@ -73,8 +82,11 @@ class CyD(admin.ModelAdmin):
 
     resource_class = DptResource
 
-class Prueba(admin.ModelAdmin):
-    list_display = ('codigo_circulo', 'coordinacion')
+@admin.register(Circle)
+class CircleCountAdmin(ImportExportModelAdmin, ExportMixin, admin.ModelAdmin):
+    
+    list_display = ('codigo_circulo', 'coordinacion', 'ingreso')
+
     def get_import_formats(self):
             """
             Returns available export formats.
@@ -96,9 +108,46 @@ class Prueba(admin.ModelAdmin):
             )
             return [f for f in formats if f().can_export()]
 
-    resource_class = CircleResource
+    resource_class = DptResource
+
+#     def changelist_view(self, request, extra_context=None):
+#         char_data = (
+#             Circle.objects.values_list('codigo_circulo', 'ingreso')
+#         )
+#         as_json = json.dumps(list(char_data), cls=DjangoJSONEncoder)
+#         extra_context = extra_context or {"char_data": as_json}
+#         return super().changelist_view(request, extra_context = extra_context)
+
+@admin.register(CircleSummary)
+class CircleSummaryAdmin(admin.ModelAdmin):
+        change_list_template = 'admin/iger/circlesummary/cs_change_list.html'
+        def changelist_view(self, request, extra_context=None):
+                response = super().changelist_view(
+                request,
+                extra_context=extra_context,
+                )
+
+                try:
+                        qs = response.context_data['cl'].queryset
+                except (AttributeError, KeyError):
+                        return response
+
+                metrics = {
+                'total': Sum('ingreso'),
+                'total_sales': Sum('ingreso'),
+                }
+
+                response.context_data['summary'] = list(
+                qs
+                .values('codigo_circulo')
+                .annotate(**metrics)
+                .order_by('-total')
+                )
+
+                response.context_data['summary_total'] = dict(qs.aggregate(**metrics))
+                return response
+   
 
 admin.site.register(Student, StudentAdmin)
 admin.site.register(ListaDepartamento, CyD)
-admin.site.register(Circle, Prueba)
 admin.site.add_action(actions.graph_queryset)
