@@ -100,11 +100,21 @@
 
             </ol>
 
+            <form action="students" method="post"> {% csrf_token %} 
+                <input class="button" type="submit" id="mandar" name='numero' value="{{student.carnet}}">
+            </form>
             <button class="button" type="submit"  align-content="right" id="mandar"  onclick="location.href='Cuarto1'">Siguiente</button>
             
             
         </div>
     </body>
     
+    <script>
+        const data = {{student | safe}}
+        console.log(data)
+        function doFunction(){
+            document.getElementsByName('numero').value = data.carnet
+        }
+    </script>
 
 </html>

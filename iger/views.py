@@ -17,9 +17,6 @@ def visitante(request):
 def carnet(request):
     return render(request, 'iger/carnet.html')
 
-def carnet2(request):
-    return render(request, 'iger/carnet2.html')
-
 def libro(request):
     return render_to_response('iger/Libros/English/story_html5.html')
 
@@ -47,10 +44,6 @@ def nombre(request):
 def pantallaTemporal(request):
     return render(request, 'iger/pantallaTemporal.html')
 
-def students(request):
-    carnet_list = Student.objects.all()
-    context = {'carnet_list': carnet_list}
-    return render(request, 'iger/students.html', context)
 
 def error_404_view(request, exception):
     return render(request, 'iger/404.html', status=404)
@@ -59,43 +52,7 @@ def error_500_view(request):
     data ={}
     return render(request, 'iger/404.html', data)
     
-def detail(request, carnet):
-    try:
-        student = Student.objects.get(carnet=carnet)
-        circle = Circle.objects.get(pk=student.circulo.codigo_circulo)
-        coordination = ListaDepartamento.objects.get(coordinacion=circle.coordinacion.coordinacion)
-        coordination.ingreso += 1
-        circle.ingreso += 1
-        student.ingreso += 1
-        coordination.save()
-        circle.save()
-        student.save()         
-    except Student.DoesNotExist:
-        try:
-            student = Student.objects.get(nombre_completo=carnet)
-            circle = Circle.objects.get(pk=student.circulo.codigo_circulo)
-            coordination = ListaDepartamento.objects.get(coordinacion=circle.coordinacion.coordinacion)
-            coordination.ingreso += 1
-            circle.ingreso += 1
-            student.ingreso += 1
-            coordination.save()
-            circle.save()
-            student.save()     
-        except Student.DoesNotExist:
-            raise Http500("El alumno no existe, ingrese nuevamente sus credenciales")
-    
-    if (student.grado == 4):
-        if(student.semestre == 1):
-            return render(request, 'semester.html', {'student': student})
-        else:
-            return render(request, 'Semester2.html', {'student': student})
-    else:
-        if(student.semestre == 1):
-            return render(request, 'QuintoSemester.html', {'student': student})
-        else:
-            return render(request, 'iger/QuintoSemester2.html', {'student': student})
-
-def detail2(request):
+def portal(request):
     carnet = ''
     nombre_completo = ''
     if request.method == 'POST':
@@ -107,12 +64,12 @@ def detail2(request):
         try:
             student = Student.objects.get(nombre_completo=nombre_completo)
         except Student.DoesNotExist:
+            
             return render(request, 'iger/404.html') 
-            #return HttpResponse(status=500)
-    
+            #return HttpResponse(status=500) 
     if (student.grado == 4):
         if(student.semestre == 1):
-            return render(request, 'iger/semester.html', {'student': student})
+            return render(request, 'semester.html', {'student': student})
         else:
             return render(request, 'iger/Semester2.html', {'student': student})
     else:
@@ -120,6 +77,60 @@ def detail2(request):
             return render(request, 'iger/QuintoSemester.html', {'student': student})
         else:
             return render(request, 'iger/QuintoSemester2.html', {'student': student})
+
+def detail(request):
+    carnet = ''
+    nombre_completo = ''
+    if request.method == 'POST':
+        carnet = request.POST['numero'] 
+        print(carnet)
+    try:
+        student = Student.objects.get(carnet=carnet)
+        circle = Circle.objects.get(pk=student.circulo.codigo_circulo)
+        coordination = ListaDepartamento.objects.get(coordinacion=circle.coordinacion.coordinacion)
+        coordination.ingreso += 1
+        circle.ingreso += 1
+        student.ingreso += 1
+        coordination.save()
+        circle.save()
+        student.save()                
+    except Student.DoesNotExist:
+        try:
+            student = Student.objects.get(nombre_completo=nombre_completo)
+            circle = Circle.objects.get(pk=student.circulo.codigo_circulo)
+            coordination = ListaDepartamento.objects.get(coordinacion=circle.coordinacion.coordinacion)
+            coordination.ingreso += 1
+            circle.ingreso += 1
+            student.ingreso += 1
+            coordination.save()
+            circle.save()
+            student.save()       
+        except Student.DoesNotExist:
+            return render(request, 'iger/404.html') 
+            #return HttpResponse(status=500)
+    
+    if (student.grado == 4):
+        if(student.semestre == 1):
+            if(student.ingreso == 1):
+                return render(request, 'iger/instructions.html')
+            else:
+                return render(request, 'semester.html', {'student': student})
+        else:
+            if(student.ingreso == 1):
+                return render(request, 'iger/instructions.html')
+            else:
+                return render(request, 'semester.html', {'student': student})
+    else:
+        if(student.semestre == 1):
+            if(student.ingreso == 1):
+                return render(request, 'iger/instructions.html')
+            else:
+                return render(request, 'semester.html', {'student': student})
+        else:
+            if(student.ingreso == 1):
+                return render(request, 'iger/instructions.html')
+            else:
+                return render(request, 'semester.html', {'student': student})
     
     
 
