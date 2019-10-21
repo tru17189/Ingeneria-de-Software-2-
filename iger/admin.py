@@ -5,7 +5,7 @@
 # from django.db.models.functions import TruncDay
 # from django.http import JsonResponse
 # from django.urls import path
-
+import json
 from django.contrib import admin
 from .models import Student
 from .models import ListaDepartamento
@@ -144,7 +144,10 @@ class CircleSummaryAdmin(admin.ModelAdmin):
                 .order_by('-total')
                 )
 
-                response.context_data['summary_total'] = dict(qs.aggregate(**metrics))
+               
+                
+
+                
                 return response
    
 
