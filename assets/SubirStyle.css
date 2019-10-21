@@ -2,16 +2,55 @@ body {
     background: #AAC4D1;
 }
 
-.FirstButtom{
+.instructions {
     position: relative;
-    height: 100px;
-    width: 30%;
-    top: 600px;
-    left: -18%;
-    border-radius: 10%;
-    border: 4px solid #939baa;
-    background-color: #5181c2;
-    font-size: 40px;
-    font-family: Arial Black;
-    color: white;
+    height: 650px;
+    width: 750px;
+    background-color: white;
+    top: 1cm;
+    left: 1cm;
+}
+
+.down{
+    position: relative;
+    top: -12cm;
+    left: 15cm;
+    transform: rotate(90deg);
+    height: 200px;
+    width: 350px;
+}
+
+.tittleStyle {
+    position: relative;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #111e6c;
+    left: 6cm;
+}
+
+.bodyStyle {
+    position: relative;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #111e6c;
+    margin: 0.3cm ;
+    text-align: justify;
+    margin-left: 5px;
+}
+
+.button1{
+    position: relative;
+    left: 25cm;
+    top: -20cm;
+    height: 2cm;
+    width: 10cm;
+}
+
+.button2{
+    position: relative;
+    background-color: white;
+    left: 9cm;
+    top: -6cm;
+    height: 3cm;
+    width: 3cm;
+    border-radius: 100%;
 }

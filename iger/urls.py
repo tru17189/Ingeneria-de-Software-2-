@@ -6,11 +6,15 @@ from . import views
 
 urlpatterns = [
     path('', views.carnet, name='carnet'),
+    path('carnet', views.carnet2, name='carnet2'),
+    path('visitante', views.visitante, name='visitante'),
+    path('visitante/libro_Visita', views.libro_Visita, name='libro_Visita'),
     path('instructions', views.instructions, name='instructions'),
     path('nombre', views.nombre, name='nombre'),
     path('students',views.students,name='students'),
     path('students/31082019/Libro', views.libro, name="Libro"),
     path('students/<str:carnet>/', views.detail, name='detail'),
+    path('student', views.detail2, name='detail2'),
 	path('students/31082019/libro_mate', views.libro_mate, name='libro_mate'),
 	path('students/31082019/libro_mate1', views.libro_mate1, name='libro_mate1'),
 	path('students/31082019/libro_Ingles1', views.libro_Ingles1, name='libro_Ingles1'),

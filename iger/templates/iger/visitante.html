@@ -95,10 +95,6 @@
 			padding-right:10%;
 		}
 		
-		.iamge-container{
-			
-		}
-		
 		p{
 			text-align: justify;
 		}
@@ -114,10 +110,13 @@
 		
 		<!--header-->
 		<ul>
-			<li><a class="active" href="#home">Inicio</a></li>
+			<li><a class="button" type="submit" id="mandar" onclick="doFunction()">Inicio</a></li>
+			<!--
 			<li><a href="https://www.iger.edu.gt/">Pagina oficial</a></li>
 			<li><a href="https://iger.edu.gt/content/inscripciones#block-quicktabs-proceso-de-inscripci-n">Inscripción</a></li>
 			<li><a href="https://www.iger.edu.gt/content/preguntas-frecuentes">Preguntas frecuentes</a></li>
+			-->
+			<li class="button" type="submit" id="mandar" onclick="goBook()" ><a>Vista de libro</a></li>
 		</ul>
 		
 		<!--body-->	
@@ -171,7 +170,13 @@
 	</body>
 	
 	<script>
-        
+        function doFunction(){
+            window.location.href = '{% url 'carnet'%}'; 
+        }
+
+		function goBook(){
+            window.location.href = '/visitante/libro_Visita'; 
+        }
 	</script>
 
 </html>

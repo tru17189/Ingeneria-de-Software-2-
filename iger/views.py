@@ -3,6 +3,7 @@ from django.shortcuts import render_to_response
 from django.http import HttpResponse
 from .models import Student, Circle, ListaDepartamento
 from django.http import Http404
+from django.http import HttpResponse
 
 def index(request):
     return render(request, 'iger/index.html')
@@ -10,11 +11,20 @@ def index(request):
 def instructions(request):
     return render(request, 'iger/instructions.html')
 
+def visitante(request):
+    return render(request, 'iger/visitante.html')
+
 def carnet(request):
     return render(request, 'iger/carnet.html')
 
+def carnet2(request):
+    return render(request, 'iger/carnet2.html')
+
 def libro(request):
     return render_to_response('iger/Libros/English/story_html5.html')
+
+def libro_Visita(request):
+    return render(request, 'iger/Libros/visualizadores/libroVisita.html')
 	
 def libro_mate(request):
     return render(request, 'booksIger/Matematica_Financiera/story_html5.html')
@@ -83,7 +93,33 @@ def detail(request, carnet):
         if(student.semestre == 1):
             return render(request, 'QuintoSemester.html', {'student': student})
         else:
-            return render(request, 'QuintoSemester2.html', {'student': student})
+            return render(request, 'iger/QuintoSemester2.html', {'student': student})
+
+def detail2(request):
+    carnet = ''
+    nombre_completo = ''
+    if request.method == 'POST':
+        carnet = request.POST['numero'] 
+        print(carnet)
+    try:
+        student = Student.objects.get(carnet=carnet)         
+    except Student.DoesNotExist:
+        try:
+            student = Student.objects.get(nombre_completo=nombre_completo)
+        except Student.DoesNotExist:
+            return render(request, 'iger/404.html') 
+            #return HttpResponse(status=500)
+    
+    if (student.grado == 4):
+        if(student.semestre == 1):
+            return render(request, 'iger/semester.html', {'student': student})
+        else:
+            return render(request, 'iger/Semester2.html', {'student': student})
+    else:
+        if(student.semestre == 1):
+            return render(request, 'iger/QuintoSemester.html', {'student': student})
+        else:
+            return render(request, 'iger/QuintoSemester2.html', {'student': student})
     
     
 

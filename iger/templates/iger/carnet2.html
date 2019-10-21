@@ -70,10 +70,10 @@
         <figure>
             <img src="{%static 'logo_iger.png' %}" alt="Logotipo Iger" width="256" height="261">
         </figure> 
-        <input id="carnet" type="text"  placeholder="Número de carné" name="numero">
-        
-        <input class="button" type="submit" id="mandar" onclick="doFunction()">Ingresar</input>
-        <input class="button" type="submit" id="visitar" onclick="visit()">Visitante</input>
+        <form action="student" method="post"> {% csrf_token %}
+            <input id="carnet" type="text"  placeholder="Número de carné" name="numero">    
+            <input class="button" type="submit" id="mandar">Ingresar</input>
+        </form>
         <a href="nombre">¿No recuerda su carné? Ingrese aquí</a>
     </body>
 
@@ -81,10 +81,5 @@
         function doFunction(){
             window.location.href = "students/"+document.getElementById("carnet").value; 
         }
-
-        function visit(){
-            window.location.href = "visitante"; 
-        }
     </script>
 </html>
-
