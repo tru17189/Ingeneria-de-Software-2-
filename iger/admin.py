@@ -16,22 +16,25 @@ from import_export.admin import ImportExportModelAdmin, ExportMixin
 from import_export.formats import base_formats
 import adminactions.actions as actions
 from django.db.models import Count, Sum, Min, Max, DateTimeField
-
+#Recurso de estudiante en el cual se obtiene el carnet del modelo de student
 class StudentResource(resources.ModelResource):
     class Meta:
         model = Student
         import_id_fields = ['carnet']
-
+#Recurso de circulo en el cual se obtiene el codigo del circulo del modelo de circulo
 class CircleResource(resources.ModelResource):
     class Meta:
         model = Circle
         import_id_fields = ['codigo_circulo']
-
+#Recurso de departamento en el cual se obtiene el codigo de coordinacion del modelo de departamento
 class DptResource(resources.ModelResource):
     class Meta:
         model = ListaDepartamento
         import_id_fields = ['coordinacion']
-
+#Modelo de datos para la vista de estudiante en el modulo de administracion 
+#en el cual se obtiene el carnet, nombre, grado, semestre, circulo e ingreso de
+#el estudiante, y se definen los filtros que se pueden utilizar para 
+#la busqueda, estos siendo grado, semestre y circulo
 class StudentAdmin(ImportExportModelAdmin, ExportMixin, admin.ModelAdmin):
     list_display = ('carnet', 'nombre_completo', 'grado', 'semestre', 'circulo', 'ingreso')
     list_filter = ('grado', 'semestre', 'circulo')
@@ -55,7 +58,9 @@ class StudentAdmin(ImportExportModelAdmin, ExportMixin, admin.ModelAdmin):
             return [f for f in formats if f().can_export()]
 
     resource_class = StudentResource
-
+#Modelo de datos para la vista de departamento en el modulo de administracion 
+#en el cual se obtiene el codigo de coordinacion, departamento e ingreso del
+# departamento 
 class CyD(ImportExportModelAdmin, ExportMixin,admin.ModelAdmin):
     list_display = ( 'coordinacion' , 'departamento', 'ingreso')
     form = ListaDepartamentoForm
