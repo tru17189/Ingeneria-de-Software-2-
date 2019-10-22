@@ -60,7 +60,7 @@ class StudentAdmin(ImportExportModelAdmin, ExportMixin, admin.ModelAdmin):
     resource_class = StudentResource
 #Modelo de datos para la vista de departamento en el modulo de administracion 
 #en el cual se obtiene el codigo de coordinacion, departamento e ingreso del
-# departamento 
+# estudiante
 class CyD(ImportExportModelAdmin, ExportMixin,admin.ModelAdmin):
     list_display = ( 'coordinacion' , 'departamento', 'ingreso')
     form = ListaDepartamentoForm
@@ -87,6 +87,9 @@ class CyD(ImportExportModelAdmin, ExportMixin,admin.ModelAdmin):
 
     resource_class = DptResource
 
+#Modelo de datos para la vista de circulos en el modulo de administracion 
+#en el cual se obtiene el codigo de circulo, codigo de coordinacione ingreso de
+#el estudiante
 @admin.register(Circle)
 class CircleCountAdmin(ImportExportModelAdmin, ExportMixin, admin.ModelAdmin):
     
