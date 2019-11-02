@@ -16,9 +16,7 @@ urlpatterns = [
     path('students/31082019/Libro', views.libro, name="Libro"),
     path('student', views.detail, name='detail'),
     path('students', views.portal, name='portal'),
-	path('students/31082019/libro_mate', views.libro_mate, name='libro_mate'),
 	path('students/31082019/libro_mate1', views.libro_mate1, name='libro_mate1'),
 	path('students/31082019/libro_Ingles1', views.libro_Ingles1, name='libro_Ingles1'),
 	path('students/31082019/libro_Fisica1', views.libro_Fisica1, name='libro_Fisica1'),
-	path('students/31082019/libro_FisicaHTML', views.libro_FisicaHTML, name='libro_FisicaHTML')
     ]
