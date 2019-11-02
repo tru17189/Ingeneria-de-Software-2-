@@ -24,16 +24,16 @@ def libro(request):
     return render_to_response('iger/Libros/English/story_html5.html')
 #Vista de visualizador de libro de visita
 def libro_Visita(request):
-    return render(request, 'iger/Libros/visualizadores/libroVisita.html')
+    return render(request, 'visualizadores/libroVisita.html')
 #Vista de visualizador de libro electronico de matematica
 def libro_mate1(request):
-    return render(request, 'iger/Libros/visualizadores/libroMate.html')
+    return render(request, 'visualizadores/libroMate.html')
 #Vista de visualizador de libro electronico de ingles
 def libro_Ingles1(request):
-    return render(request, 'iger/Libros/visualizadores/libroIngles.html')
+    return render(request, 'visualizadores/libroIngles.html')
 #Vista de visualizador de libro electronico de fisica de quinto bachillerato
 def libro_Fisica1(request):
-    return render(request, 'iger/Libros/visualizadores/libroFisica.html')
+    return render(request, 'visualizadores/libroFisica.html')
 #Vista de ingreso de nombre completo en caso de que el usuario no 
 #conozca su carnet
 def nombre(request):
