@@ -32,7 +32,8 @@ ALLOWED_HOSTS = ["*"]
 
 INSTALLED_APPS = [
     'iger.apps.IgerConfig',
-    'django_humanize',    
+    'django_humanize',
+    'pwa',    
     'import_export',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -130,3 +131,7 @@ STATICFILES_DIRS = (
 
 LOGIN_REDIRECT_URL = 'home'
 LOGOUT_REDIRECT_URL = 'home'
+
+#PWA config
+PWA_APP_NAME = "ABCdigital"
+PWA_APP_DESCRIPTION = "Aplicacion para descargar y visualizar libros"
