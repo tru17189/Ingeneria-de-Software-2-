@@ -106,13 +106,19 @@ def detail(request):
         carnet = request.POST['numero'] 
         print(carnet)
     try:
-	#Se intenta obtener el modelo del estudiante buscandolo por su carnet
+	#Se busca modelo del estudiante buscandolo por su carnet
         student = Student.objects.get(carnet=carnet)
+	#Se busca el circulo al que pertenece el estudiante
         circle = Circle.objects.get(pk=student.circulo.codigo_circulo)
+	#Se busca la coordinacion al que pertenece el circulo del estudiante
         coordination = ListaDepartamento.objects.get(coordinacion=circle.coordinacion.coordinacion)
+	#Se guarda que un estudiante de dicha coordinacion ha ingresado a la pagina
         coordination.ingreso += 1
+	#Se guarda que un estudiante de el circulo ha ingresado a la pagina
         circle.ingreso += 1
+	#Se guarda que un estudiante ha ingresado a la pagina
         student.ingreso += 1
+	#Se guardan los valores cambiados en la base de datos
         coordination.save()
         circle.save()
         student.save()                
