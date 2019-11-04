@@ -57,20 +57,26 @@ def error_500_view(request):
 #Luego dependiendo del grado y semestre del estudiante, carga la lista de libros 
 #necesaria
 def portal(request):
+    #Se definen las variables para asignar valores del carnet y nombre de usuario
     carnet = ''
     nombre_completo = ''
+    #Se verifica que se ha llegado a este view por medio de un metodo de post por un submit 
     if request.method == 'POST':
+	#Se obtiene el valor pasado por el submit donde se obtiene el carnet del estudiante
         carnet = request.POST['numero'] 
         print(carnet)
+    #Se intenta obtener el modelo del estudiante buscandolo por su carnet
     try:
         student = Student.objects.get(carnet=carnet)         
     except Student.DoesNotExist:
+	#Si no se logra encontrar el estudiante por carnet se busca por nombre
         try:
             student = Student.objects.get(nombre_completo=nombre_completo)
         except Student.DoesNotExist:
-            
+            #Si no se enceuntra se carga el view de error de 404
             return render(request, 'iger/404.html') 
             #return HttpResponse(status=500) 
+    #Dependiendo del grado del estudiante se carga la vista correspondiente
     if (student.grado == 4):
         if(student.semestre == 1):
             return render(request, 'semester.html', {'student': student})
