@@ -18,5 +18,6 @@ urlpatterns = [
 	path('libro_mate1', views.libro_mate1, name='libro_mate1'),
 	path('libro_Ingles1', views.libro_Ingles1, name='libro_Ingles1'),
 	path('libro_Fisica1', views.libro_Fisica1, name='libro_Fisica1'),
+	path('libro_tic1', views.libro_tic1, name='libro_tic1'),
     path('', include('pwa.urls'))
     ]

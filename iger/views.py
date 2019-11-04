@@ -28,9 +28,12 @@ def libro_mate1(request):
 #Vista de visualizador de libro electronico de ingles
 def libro_Ingles1(request):
     return render(request, 'visualizadores/semestre4/libroIngles.html')
-#Vista de visualizador de libro electronico de fisica de quinto bachillerato
+#Vista de visualizador de libro electronico de fisica 
 def libro_Fisica1(request):
     return render(request, 'visualizadores/semestre4/libroFisica.html')
+#Vista de visualizador de libro electronico de tic 
+def libro_tic1(request):
+    return render(request, 'visualizadores/semestre4/libroTIC.html')
 #Vista de ingreso de nombre completo en caso de que el usuario no 
 #conozca su carnet
 def nombre(request):
