@@ -37,6 +37,9 @@ def libro_tic1(request):
 #Vista de visualizador de libro electronico de elaboracion 
 def libro_elaboracion1(request):
     return render(request, 'visualizadores/semestre4/libroElaboracion.html')
+#Vista de visualizador de libro electronico de matematica financiera 
+def libro_financiera1(request):
+    return render(request, 'visualizadores/semestre4/libroFinanciera.html')
 #Vista de ingreso de nombre completo en caso de que el usuario no 
 #conozca su carnet
 def nombre(request):

@@ -20,5 +20,6 @@ urlpatterns = [
 	path('libro_Fisica1', views.libro_Fisica1, name='libro_Fisica1'),
 	path('libro_tic1', views.libro_tic1, name='libro_tic1'),
 	path('libro_elaboracion1', views.libro_elaboracion1, name='libro_elaboracion1'),
+	path('libro_financiera1', views.libro_financiera1, name='libro_financiera1'),
     path('', include('pwa.urls'))
     ]
