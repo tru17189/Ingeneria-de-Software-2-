@@ -1,11 +1,16 @@
 {%load static from staticfiles%}
 <!DOCTYPE html>
+    
     <html>
-        <style>
-            
-        </style>
-        <body style="background-color:#ffff;">
-            <iframe src="https://drive.google.com/drive/folders/1i0efgfrmvJeOlcag-CXQubzHebAbVLhB" name="iframe_a" height="700" width="90%" align="middle"></iframe>
-            <a href="{% static '/Fisica4to/story.html' %}" style="color:rgb(255,0,0);" target="iframe_a">Iniciar</a>
+        <body style="background-color:rgba(250,146,0,1);">
+            <div>
+                <iframe src="{% static '/mate/story.html' %}" width="99%" height="585 px" align="middle"></iframe>
+            </div>
+            <input class="button" type="submit" id="Regresar" onclick="doFunction()">Regresar</input>
         </body>
+        <script>
+            function doFunction(){
+                window.location.href = "students/"+document.getElementById("carnet").value; 
+            }
+        </script>
     </html>
