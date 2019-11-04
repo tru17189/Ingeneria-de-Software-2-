@@ -2,13 +2,20 @@
 <!DOCTYPE html>
     <html>
         <style>
-            
+            .botton{
+                position: relative;
+                background: white;
+                color: rgba(250,146,0,1);
+                height: 4cm;
+                width: 7cm;
+                font-size: 2cm;
+            }                   
         </style>
         <body style="background-color:rgba(250,146,0,1);">
             <div>
                 <iframe src="{% static '/story.html' %}"  width="99%" height="585 px" align="middle"></iframe>
             </div>
-            <input class="button" type="submit" id="Regresar" onclick="doFunction()">Regresar</input>
+            <input class="botton" type="submit" id="Regresar" onclick="doFunction()">Regresar</input>
         </body>
 
         <script>
