@@ -6,19 +6,21 @@ class UserDefinedTask(TaskSet):
     def home(self):
         self.client.get("/students/31082019/")
 
-    #abrir el libro de matematicas
     @task(2)
     def home(self):
         self.client.get("/students/31082019/libro_mate")
     
+    #abrir el libro de matematicas y TIC
     @task(3)
     def home(self):
         self.client.get("/students/31082019/Libro")
 
+    #abrir el libro de ingles tecnico
     @task(4)
     def home(self):
         self.client.get("/students/31082019/ibro_Ingles1")
 
+    #abrir el libro de fisica 1
     @task(5)
     def home(self):
         self.client.get("/students/31082019/libro_Fisica1")
