@@ -88,6 +88,8 @@ def detail(request):
     carnet = ''
     nombre_completo = ''
     #Se verifica que se ha llegado a este view por medio de un metodo de post por un submit 
+    if ("Lista_Ingresados" in request.session):
+        print('Carnets Ingresadas ', request.session['Lista_Ingresados'])
     if request.method == 'POST':
 	#Se obtiene el valor pasado por el submit donde se obtiene el carnet del estudiante
         carnet = request.POST['numero'] 
@@ -108,7 +110,13 @@ def detail(request):
 	#Se guardan los valores cambiados en la base de datos
         coordination.save()
         circle.save()
-        student.save()                
+        student.save()  
+	if ("Lista_Ingresados" in request.session):
+            if (not(student.carnet in request.session['Lista_Ingresados'])):
+                request.session['Lista_Ingresados'].append(student.carnet)  
+                
+        else:
+            request.session['Lista_Ingresados'] = [student.carnet]
     except Student.DoesNotExist:
         try:
             student = Student.objects.get(nombre_completo=nombre_completo)
