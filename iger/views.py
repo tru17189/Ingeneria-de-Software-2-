@@ -111,10 +111,9 @@ def detail(request):
         coordination.save()
         circle.save()
         student.save()  
-	if ("Lista_Ingresados" in request.session):
+        if ("Lista_Ingresados" in request.session):
             if (not(student.carnet in request.session['Lista_Ingresados'])):
                 request.session['Lista_Ingresados'].append(student.carnet)  
-                
         else:
             request.session['Lista_Ingresados'] = [student.carnet]
     except Student.DoesNotExist:
