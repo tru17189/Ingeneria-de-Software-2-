@@ -3,8 +3,6 @@ from .models import Student
 from .models import ListaDepartamento
 from .models import Circle
 
-from .views import libro_mate
-
 
 #Test Cases para pruebas unitarias
 

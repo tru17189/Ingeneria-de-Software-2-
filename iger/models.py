@@ -11,6 +11,7 @@ class Student(models.Model):
     ingreso = models.IntegerField(default=0, editable=False)
     # def __str__(self):
     #     return self.carnet
+    #Funciones Get para obtener todos los atributos del modelo de estudiante
     def get_name(self):
         return self.nombre_completo
     def get_grade(self):
@@ -29,7 +30,7 @@ class ListaDepartamento(models.Model):
     coordinacion = models.CharField(max_length=2, primary_key=True)
     departamento = models.CharField(max_length=30)
     ingreso = models.IntegerField(default=0, editable=False)
-
+    #Funciones Get para obtener todos los atributos del modelo de departamento
     def get_departamento(self):
         return self.departamento
     def get_coordinacion(self):
@@ -44,7 +45,7 @@ class Circle(models.Model):
     codigo_circulo = models.CharField(max_length=20, primary_key=True)
     coordinacion = models.ForeignKey('ListaDepartamento', models.CASCADE)
     ingreso = models.IntegerField(default=0, editable=False)
-
+    #Funciones Get para obtener todos los atributos del modelo de circulo
     def get_circle_code(self):
         return self.codigo_circulo
     def get_name_coor(self):
