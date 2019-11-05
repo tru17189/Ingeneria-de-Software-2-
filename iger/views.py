@@ -2,11 +2,16 @@ from django.shortcuts import render
 from django.shortcuts import render_to_response
 from django.http import HttpResponse
 from .models import Student, Circle, ListaDepartamento
-from django.http import Http404
+from django.http import FileResponse, Http404
 from django.http import HttpResponse
 #Lista de diferentes vistas de  la aplicacion y los procesos que
 #se realizan antes de cargar la pagina solicitada
 
+def pdf_view(request):
+    try:
+        return FileResponse(open('iger/Contabilidad_tacana_5_8.pdf', 'rb'), content_type='application/pdf')
+    except FileNotFoundError:
+        raise Http404()
 def index(request):
     return render(request, 'iger/index.html')
 #Vista de instrucciones para los estudiantes para la descarga y lectura
