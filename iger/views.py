@@ -18,34 +18,16 @@ def index(request):
 #de los libros electroncos
 def instructions(request):
     return render(request, 'iger/instructions.html')
+
+def instructions2(request):
+    return render(request, 'iger/instructionsI.html')
 #Vista de visitante que no es estudiante
 def visitante(request):
     return render(request, 'iger/visitante.html')
 #Vista de ingreso de carnet del estudiante
 def carnet(request):
     return render(request, 'iger/carnet.html')
-#Vista de visualizador de libro de lenguaje y literatura
-def libro_LenguaLiteratura1(request):
-    return render(request, 'visualizadores/semestre4/libro_LenguaLiteratura1.html')
-#Vista de visualizador de libro electronico de matematica
-def libro_mate1(request):
-    return render(request, 'visualizadores/semestre4/libroMate.html')
-#Vista de visualizador de libro electronico de ingles
-def libro_Ingles1(request):
-    return render(request, 'visualizadores/semestre4/libroIngles.html')
-#Vista de visualizador de libro electronico de fisica 
-def libro_Fisica1(request):
-    return render(request, 'visualizadores/semestre4/libroFisica.html')
-#Vista de visualizador de libro electronico de tic 
-def libro_tic1(request):
-    return render(request, 'visualizadores/semestre4/libroTIC.html')
-#Vista de visualizador de libro electronico de elaboracion 
-def libro_elaboracion1(request):
-    return render(request, 'visualizadores/semestre4/libroElaboracion.html')
-#Vista de visualizador de libro electronico de matematica financiera 
-def libro_financiera1(request):
-    return render(request, 'visualizadores/semestre4/libroFinanciera.html')
-#Vista de ingreso de nombre completo en caso de que el usuario no 
+ 
 #conozca su carnet
 def nombre(request):
     return render(request, 'iger/nombre.html')
