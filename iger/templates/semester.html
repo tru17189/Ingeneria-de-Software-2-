@@ -10,277 +10,156 @@
             color: #111E6C;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-
-        
-        .Square1 {
-            position: absolute;
-            width: 20%;
-            height: 25%;
-            background: #ffffff;
-            border: 3% solid black;
-            border-radius: 0%;
-        }
-          
-        .square2 {
-            top: 25%;
-            left: 3%;
+        .header{
+            margin-left: 300px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
         }
 
-        .square3 {
-            top: 25%;
-            left: 25%;
+        .info{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
         }
 
-        .square4 {
-            top: 25%;
-            left: 47%;
+        .row1 {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
         }
 
-        .square5 {
-            top: 25%;
-            left: 69%;
+        .square {
+            background-color: gray;
+            width: 350px;
+            height: 200px;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
         }
 
-        .square6 {
-            top: 55%;
-            left: 3%;
-        }
-
-        .square7 {
-            top: 55%;
-            left: 25%;
-        }
-
-        .square8 {
-            top: 55%;
-            left: 47%;
-        }
-
-        .square9 {
-            top: 55%;
-            left: 69%;
-        }
-
-        .square10 {
-            top: 85%;
-            left: 3%;
-        }
-
-        h1 {
-            margin-top: 1%;
-            margin-left: 42%;
-            font-size: 45px;
-            font-weight: bold;
-        }
-
-        a {
-            padding-top: 125px;
-            margin-left: 8%;
-            display: block;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: #111E6C;
-            font-size: 20px;
-            text-decoration: none;
-        }
-
-        
-
-
-        .h2_2 {
-            position: absolute;
-            top: 3%;
-            left: 7%;
-            width: 85%;
-            height: 65%;
-            border-radius: 0%;
-            background: #c3c7b3;
-            border: 1.3% solid #c3c7b3;
+        .flex-inside{
+            display: flex;
+            justify-content: space-around;
         }
 
         .download {
-            position: absolute;
-            top: 5%;
-            left: 70%;
-            font-size: 40px;
-            color: orange;
-           
+            color: darkorange;
+            font-size: 32px;
+        }
+        a{
+            text-decoration: none;
         }
 
-        .h4 {
-            font-size: 25px;
-            position: absolute;
-            top: 10%;
-            left: 5%;
+        h4{
+            font-size: 26px;
         }
 
-        .h5 {
-            font-size: 25px;
-            position: absolute;
-            top: 10%;
-            left: 20%;
+        h1{
+            font-size: 48px;
+        }
+        .title{
+            font-size: larger;
+            font-weight: 600;
+            color: #111E6C;
         }
 
-        .h6 {
-            font-size: 25px;
-            position: absolute;
-            top: 10%;
-            left: 60%;
-        }
-
-        .h7 {
-            font-size: 25px;
-            position: absolute;
-            top: 10%;
-            left: 75%;
-        }
-
-        .help-tip{
-            position: absolute;
-            top: 18px;
-            right: 18px;
-            text-align: center;
-            background-color: #BCDBEA;
-            border-radius: 50%;
-            width: 24px;
-            height: 24px;
-            font-size: 14px;
-            line-height: 26px;
-            cursor: default;
-        }
-
-        .help-tip:before{
-            content:'?';
-            font-weight: bold;
-            color:#fff;
-        }
-
-        .help-tip:hover p{
-            display:block;
-            transform-origin: 100% 0%;
-
-            -webkit-animation: fadeIn 0.3s ease-in-out;
-            animation: fadeIn 0.3s ease-in-out;
-
-        }
-
-        .help-tip p{
-            display: none;
-            text-align: left;
-            background-color: #1E2021;
-            padding: 20px;
-            width: 300px;
-            position: absolute;
-            border-radius: 3px;
-            box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
-            right: -4px;
-            color: #FFF;
-            font-size: 13px;
-            line-height: 1.4;
-        }
-
-        .help-tip p:before{
-            position: absolute;
-            content: '';
-            width:0;
-            height: 0;
-            border:6px solid transparent;
-            border-bottom-color:#1E2021;
-            right:10px;
-            top:-12px;
-        }
-
-        .help-tip p:after{
-            width:100%;
-            height:40px;
-            content:'';
-            position: absolute;
-            top:-40px;
-            left:0;
-        }
-
-        @-webkit-keyframes fadeIn {
-            0% { 
-                opacity:0; 
-                transform: scale(0.6);
+        @media  (min-width: 400px) and (max-width: 1450px) {
+            .row1 {
+                display: flex;
+                flex-flow: row wrap;
             }
-
-            100% {
-                opacity:100%;
-                transform: scale(1);
+            .square {
+                background-color: gray;
+                width: 400px;
+                height: 200px;
+                margin: 10px;
+                text-align: center;
+                line-height: 75px;
+                font-size: 30px;
             }
-        }
-
-        @keyframes fadeIn {
-            0% { opacity:0; }
-            100% { opacity:100%; }
+            
         }
     </style>
 
 {% load static from staticfiles%}
     <body>
+       <div class="header">
+           <h1>Mis libros bachillerato digital</h1>
+           <a href="instructions2" target="_blank" class="fa fa-question-circle" style="font-size: 40px;"></a>
+           <a href="/" style="font-size: 24px;">Cerrar sesión</a>
+       </div>
+
+       <div class="info">
+            <h4 >Carné: {{student.carnet}}</h4>
+            <h4 >Nombre: {{student.nombre_completo}}</h4>
+            <h4 >Grado: {{student.grado}}</h4>
+            <h4 >Semestre: {{student.semestre}}</h4>
+       </div>
+
+       <div class="row1">
+            <div class="Square1">
+                <div class="square"></div>
+                <div class="flex-inside">
+                    <a   href="pdf_view" target="_blank" class="title">Lengua y Literatura</a>
+                    <a class="download fa fa-download"  href="https://drive.google.com/uc?export=download&id=ttps://drive.google.com/open?id=1i0efgfrmvJeOlcag-CXQubzHebAbVLh" ></a>
+                </div>
+            </div>
+            <div class="Square1 ">
+                <div class="square"></div>
+                <div class="flex-inside">
+                    <a href="pdf_view" target="_blank" class="title">Inglés técnico</a>
+                    <a class="download fa fa-download" href="/iger/Libros/Organizacion y administracion_4to_1s.zip" download></a>
+                </div>
+            </div>
+            <div class="Square1 ">
+                <div class="square"></div>
+                <div class="flex-inside">
+                    <a href="pdf_view" target="_blank" class="title">Mátematica</a>
+                    <a class="download fa fa-download" href="/iger/Libros/Organizacion y administracion_4to_1s.zip" download></a>
+                </div>
+            </div>
+            <div class="Square1 ">
+                <div class="square"></div>
+                <div class="flex-inside">
+                    <a href="pdf_view" target="_blank" class="title">TIC'S</a>
+                    <a class="download fa fa-download" href="/iger/Libros/Organizacion y administracion_4to_1s.zip" download></a>
+                </div>
+            </div>
+       </div>
+
+       <div class="row1" style="margin-top: 50px">
+            <div class="Square1 ">
+                <div class="square"></div>
+                <div class="flex-inside">
+                    <a href="pdf_view" target="_blank" class="title">Mátematica financiera</a>
+                    <a class="download fa fa-download" href="/iger/Libros/Organizacion y administracion_4to_1s.zip" download></a>
+                </div>
+            </div>
+            <div class="Square1 ">
+                <div class="square"></div>
+                <div class="flex-inside">
+                    <a href="pdf_view" target="_blank" class="title">Física</a>
+                    <a class="download fa fa-download" href="/iger/Libros/Organizacion y administracion_4to_1s.zip" download></a>
+                </div>
+            </div>
+            <div class="Square1 ">
+                <div class="square"></div>
+                <div class="flex-inside">
+                    <a href="pdf_view" target="_blank" class="title">Elaboración y gestión de proyectos</a>
+                    <a class="download fa fa-download" href="/iger/Libros/Organizacion y administracion_4to_1s.zip" download></a>
+                </div>
+            </div>
+            <div class="Square1 ">
+                <div class="square"></div>
+                <div class="flex-inside">
+                    <a href="pdf_view" target="_blank" class="title">Contabilidad general</a>
+                    <a class="download fa fa-download" href="/iger/Libros/Organizacion y administracion_4to_1s.zip" download></a>
+                </div>
+            </div>
+       </div>
        
-        <h1>Mis Libros</h1>
-        <div class="help-tip">
-            <a   href="instructions2" target="_blank"></a>
-        </div>
-        <h4 class="h4">Carné: {{student.carnet}}</h4>
-        <h4 class="h5">Nombre: {{student.nombre_completo}}</h4>
-        <h4 class="h6">Grado: {{student.grado}}</h4>
-        <h4 class="h7">Semestre: {{student.semestre}}</h4>
-
-        <div class="Square1 square2">
-            <a   href="pdf_view" target="_blank">Lengua y Literatura</a>
-            <div class="h2_2"></div>
-            <a class="download fa fa-download" href="https://drive.google.com/uc?export=download&id=ttps://drive.google.com/open?id=1i0efgfrmvJeOlcag-CXQubzHebAbVLh" ></a>
-        </div>
-
-        <div class="Square1 square3">
-            <a href="pdf_view" target="_blank"> Inglés técnico</a>
-            <div class="h2_2"></div>
-            <a class="download fa fa-download" href="/iger/Libros/Organizacion y administracion_4to_1s.zip" download></a>
-        </div>
-
-        <div class="Square1 square4">
-            <a  href="pdf_view" target="_blank">Matemática</a>
-            <div class="h2_2"></div>
-            <a class="download fa fa-download" href="/iger/Libros/Matemática_4to_1s.zip" download></a>
-        </div>
-
-        <div class="Square1 square5">
-            <a href="pdf_view" target="_blank">TIC's</a>
-            <div class="h2_2"></div>
-            <a class="download fa fa-download" href="/iger/Libros/TIC´s_1_6.zip" download></a>
-        </div>
-
-        <div class="Square1 square6">
-            <a  href="pdf_view" target="_blank">Matemática Financiera</a>
-            <div class="h2_2"></div>
-            <a class="download fa fa-download" href="/iger/Libros/Matematica Financiera_4to_1s.zip" download></a>
-        </div>
-
-        <div class="Square1 square7">
-            <a  href="pdf_view" target="_blank">Física</a>
-            <div class="h2_2"></div>
-            <a class="download fa fa-download" href="/iger/Libros/Organizacion y administracion_4to_1s.zip" download></a>
-        </div>
-
-        <div class="Square1 square8">
-            <a  href="pdf_view" target="_blank">Elaboración y gestión de proyectos</a>
-            <div class="h2_2"></div>
-            <a class="download fa fa-download" href="/iger/Libros/Organizacion y administracion_4to_1s.zip" download></a>
-        </div>
-
-        <div class="Square1 square9">
-            <a href="pdf_view" target="_blank">Organización y administración</a>
-            <div class="h2_2"></div>
-            <a class="download fa fa-download" href="/iger/Libros/Organizacion y administracion_4to_1s.zip" download></a>
-        </div>
-
-        <div class="Square1 square10">
-            <a  href="pdf_view" target="_blank">Contabilidad general</a>
-            <div class="h2_2"></div>
-            <a class="download fa fa-download" href="/iger/Libros/Organizacion y administracion_4to_1s.zip" download></a>
-        </div>
     </body>
     <script>
         function doFunction(){
