@@ -15,6 +15,7 @@ urlpatterns = [
     path('nombre', views.nombre, name='nombre'),
     path('student', views.detail, name='detail'),
     path('students', views.portal, name='portal'),
+	path('libro_Fisica1', views.libro_Fisica1, name='libro_Fisica1'),
     path('', include('pwa.urls')),
     path('pdf_view', views.pdf_view, name='pdf_view'),
     path(r'adminactions/', include('adminactions.urls')),
