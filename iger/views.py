@@ -32,6 +32,9 @@ def carnet(request):
 def nombre(request):
     return render(request, 'iger/nombre.html')
 	
+def libro_Fisica1(request):
+    return render(request, 'visualizadores/semestre4/libroFisica.html')
+	
 def pantallaTemporal(request):
     return render(request, 'iger/pantallaTemporal.html')
 
