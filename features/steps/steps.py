@@ -17,17 +17,9 @@ driver = webdriver.Chrome("C:/Users/hecto/Documents/UVG 2019/Ing en Software 2/I
 def step_impl(context):
     driver.get('http://localhost:8000/admin')
 
-@when('I enter the username "{username}" with the password')
-def step_impl(context, username):
-    elem = driver.find_element_by_id("id_username")
-    elem.send_keys(username)
-    elem = driver.find_element_by_id("id_password")
-    elem.send_keys("Mikki1217")
-
-@then('I will go to the admin view')
+@given('I go to the student login page')
 def step_impl(context):
-    elem = driver.find_element_by_id("id_password")
-    elem.send_keys(Keys.RETURN)
+    driver.get('http://localhost:8000/')
 
 #verify an existing student gets a page
 @given('I search for an existing student with carnet "{number}"')
@@ -39,36 +31,53 @@ def step_impl(context, number):
     elem = driver.find_element_by_id("carnet")
     elem.send_keys(number)
     #elem.send_keys(Keys.RETURN)
-    
-    
-    
 
-@then('the resulting page will be the instructions')
-def step_impl(context):
-    elem = driver.find_element_by_id("mandar")
-    elem.click()
-    '''
-    delay = 20 # seconds
-    elem = WebDriverWait(driver, delay).until(EC.element_to_be_clickable((By.ID, 'mandar')))
-        
-    try:
-        elem.click()
-        driver.close()
-        assert True is not False
-    except TimeoutException:
-        driver.close()
-        assert context.failed is True
-    '''
-        #fail('%r not in %r' % (text, context.response))
+@when('I enter a student that does not exist with carnet "{carnet}"')
+def step_impl(context, carnet):
+    elem = driver.find_element_by_id("carnet")
+    elem.send_keys(carnet)
 
+@when('I enter the wrong username "{username}" with "{password}" as the password')
+def step_impl(context, username, password):
+    elem = driver.find_element_by_id("id_username")
+    elem.send_keys(username)
+    elem = driver.find_element_by_id("id_password")
+    elem.send_keys(password)
+    elem.send_keys(Keys.RETURN)
 
-#Go to the books page
-    
+@when('I enter the username "{username}" with the password')
+def step_impl(context, username):
+    elem = driver.find_element_by_id("id_username")
+    elem.send_keys(username)
+    elem = driver.find_element_by_id("id_password")
+    elem.send_keys("Mikki1217")
 
 @when('I go to the instructions page and continue')
 def step_impl(context):
     elem = driver.find_element_by_id("mandar")
     elem.click()
+
+@then('I will go to the admin view')
+def step_impl(context):
+    elem = driver.find_element_by_id("id_password")
+    elem.send_keys(Keys.RETURN)  
+
+@then('It should not let me go to the students database')
+def step_impl(context):
+    driver.get('http://localhost:8000/admin/iger/student/')
+
+@then('the resulting page will be the instructions')
+def step_impl(context):
+    elem = driver.find_element_by_id("mandar")
+    elem.click()
+
+@then('It should not let me go to the students book download page')
+def step_impl(context):
+    driver.get('http://localhost:8000/student')
+
+@then('It should not let me go to the book viewer page')
+def step_impl(context):
+    driver.get('http://localhost:8000/student')
 
 @then('I will go to the books view')
 def step_impl(context):
