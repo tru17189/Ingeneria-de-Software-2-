@@ -3,7 +3,7 @@ docutils==0.15.2
 pytz==2019.2
 sqlparse==0.3.0
 suit==2.0.2
-djangorestframework==3.10.2
+djangorestframework==3.11.2
 behave-django==1.3.0
 django-import-export==1.2.0
 selenium==3.141.0
